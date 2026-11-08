@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --color-canvas: #F8F7F4;
+  --color-canvas-muted: #F1EFEA;
+  --color-canvas-subtle: #ECE8E0;
+  --color-canvas-dark: #121517;
+  --color-canvas-card: #FFFFFF;
+
+  --color-charcoal: #14171A;
+  --color-charcoal-muted: #545F68;
+  --color-charcoal-light: #88939C;
+
+  --color-slate-blue: #384D58;
+  --color-slate-blue-dark: #273740;
+  --color-slate-blue-light: #4F6877;
+  --color-slate-blue-subtle: #EBF0F3;
+
+  --color-stone-border: #DFDBD2;
+  --color-stone-border-dark: #2B3740;
+
+  --color-accent-ochre: #9B7E58;
+
+  --font-display: var(--font-cormorant), Georgia, serif;
+  --font-sans: var(--font-jakarta), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: var(--font-jetbrains), SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+:root {
+  --background: #F8F7F4;
+  --foreground: #14171A;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  background-color: var(--background);
+  color: var(--foreground);
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #F8F7F4;
+  color: #14171A;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: #384D58;
+  color: #F8F7F4;
+}
+
+/* Custom architectural hairline focus outline */
+:focus-visible {
+  outline: 2px solid #384D58;
+  outline-offset: 2px;
+}
+
+/* Custom architectural scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F1EFEA;
+}
+::-webkit-scrollbar-thumb {
+  background: #384D58;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #273740;
+}
