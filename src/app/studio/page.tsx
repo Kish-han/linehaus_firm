@@ -17,13 +17,13 @@ export default function StudioPage() {
       {/* Studio Banner */}
       <section className="pb-16 md:pb-24 border-b border-[#DFDBD2]">
         <Container size="wide">
-          <div className="flex items-center gap-3 mb-4 text-xs font-mono tracking-[0.25em] text-[#384D58] uppercase">
+          <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-4 text-[10px] sm:text-xs font-mono tracking-wider sm:tracking-[0.25em] text-[#384D58] uppercase">
             <span>[PRACTICE PROFILE]</span>
             <span>·</span>
             <span>BHADRAVATI, KARNATAKA</span>
           </div>
 
-          <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-normal text-[#14171A] leading-[1.08] max-w-5xl">
+          <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-normal text-[#14171A] leading-[1.08] max-w-5xl">
             We build for daily life, <br />
             <span className="italic text-[#384D58]">climate reality, and permanence.</span>
           </h1>

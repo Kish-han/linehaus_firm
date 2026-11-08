@@ -58,12 +58,12 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
   const MonogramSvg = (
     <div className="relative flex-shrink-0 flex items-center justify-center">
       <svg
-        width="38"
-        height="38"
+        width="34"
+        height="34"
         viewBox="0 0 44 44"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="transition-transform duration-300 group-hover:scale-[1.02]"
+        className="w-[32px] h-[32px] sm:w-[38px] sm:h-[38px] transition-transform duration-300 group-hover:scale-[1.02]"
         aria-label="Linehaus Architects LA Monogram"
       >
         {/* Geometric Framing Box with Architectural Hairline Profile */}
@@ -107,31 +107,31 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
 
   const LogoContent = (
     <div
-      className={`group inline-flex items-center gap-3 transition-opacity duration-200 hover:opacity-95 ${className}`}
+      className={`group inline-flex items-center gap-2 sm:gap-3 transition-opacity duration-200 hover:opacity-95 ${className}`}
       data-brand="linehaus-architects"
     >
       {variant === "monogram" && MonogramSvg}
 
       {variant === "horizontal" && (
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3">
           {MonogramSvg}
-          <div className="flex flex-col justify-center border-l pl-3" style={{ borderColor: colors.border }}>
-            <div className="flex items-baseline gap-1.5 leading-none">
+          <div className="flex flex-col justify-center border-l pl-2 sm:pl-3" style={{ borderColor: colors.border }}>
+            <div className="flex items-baseline gap-1 sm:gap-1.5 leading-none">
               <span
-                className="font-sans font-bold tracking-[0.2em] text-[15px] sm:text-[16px] uppercase"
+                className="font-sans font-bold tracking-[0.14em] sm:tracking-[0.2em] text-[13px] sm:text-[16px] uppercase"
                 style={{ color: colors.primaryText }}
               >
                 LINEHAUS
               </span>
               <span
-                className="font-mono text-[10px] tracking-[0.25em] font-medium uppercase"
+                className="font-mono text-[8px] sm:text-[10px] tracking-[0.18em] sm:tracking-[0.25em] font-medium uppercase"
                 style={{ color: colors.secondaryText }}
               >
                 ARCHITECTS
               </span>
             </div>
             <span
-              className="font-sans text-[9px] tracking-[0.24em] uppercase mt-1 font-medium"
+              className="font-sans text-[8px] sm:text-[9px] tracking-[0.18em] sm:tracking-[0.24em] uppercase mt-0.5 sm:mt-1 font-medium"
               style={{ color: colors.descriptorText }}
             >
               Architecture + Interior

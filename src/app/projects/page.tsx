@@ -29,13 +29,13 @@ export default function ProjectsPage() {
       <Container size="wide">
         {/* Page Header */}
         <div className="pb-12 mb-10 border-b border-[#DFDBD2]">
-          <div className="flex items-center gap-3 mb-4 text-xs font-mono tracking-[0.25em] text-[#384D58] uppercase">
+          <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-4 text-[10px] sm:text-xs font-mono tracking-wider sm:tracking-[0.25em] text-[#384D58] uppercase">
             <span>[PORTFOLIO ARCHIVE]</span>
             <span>·</span>
             <span>{projectsData.length} ARCHITECTURAL TYPOLOGY STUDIES</span>
           </div>
 
-          <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-normal text-[#14171A] leading-[1.08]">
+          <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-normal text-[#14171A] leading-[1.08]">
             Typology Studies <br />
             <span className="italic text-[#384D58]">&amp; Spatial Investigations.</span>
           </h1>

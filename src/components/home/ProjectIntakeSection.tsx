@@ -35,15 +35,39 @@ export const ProjectIntakeSection: React.FC = () => {
     setFormData((prev) => ({ ...prev, projectTypology: typology }));
   };
 
+  const [isCopied, setIsCopied] = useState(false);
+
+  const getFormattedBrief = () => {
+    return `LINEHAUS ARCHITECTS — PROJECT COMMISSION BRIEF
+==================================================
+Client / Family: ${formData.clientName}
+Email: ${formData.email}
+Phone: ${formData.phone}
+Discipline / Typology: ${formData.projectTypology}
+Site Location: ${formData.siteLocation}
+Approximate Scale / Area: ${formData.estimatedArea || "To be determined"}
+Target Timeline: ${formData.timeline}
+Requirements & Vision:
+${formData.projectBrief || "None provided"}
+==================================================
+Submitted via Linehaus Digital Architecture Portal`;
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate clean form handling / API dispatch
+    // Simulate compilation
     setTimeout(() => {
       setIsSubmitting(false);
       setIsSubmitted(true);
-    }, 800);
+    }, 600);
+  };
+
+  const handleCopyBrief = () => {
+    navigator.clipboard.writeText(getFormattedBrief());
+    setIsCopied(true);
+    setTimeout(() => setIsCopied(false), 2500);
   };
 
   return (
@@ -115,25 +139,60 @@ export const ProjectIntakeSection: React.FC = () => {
           {/* Right Column: Interactive Consultation Questionnaire */}
           <div className="lg:col-span-7 bg-[#1A2024] p-6 sm:p-10 border border-[#2B3740]">
             {isSubmitted ? (
-              <div className="py-16 text-center space-y-4 animate-in fade-in duration-300">
-                <div className="inline-flex items-center justify-center w-14 h-14 bg-[#384D58] text-white rounded-none border border-[#4F6877] mb-2">
-                  <CheckCircle2 className="w-7 h-7 text-white" />
+              <div className="py-12 space-y-6 animate-in fade-in duration-300">
+                <div className="flex items-center gap-3 pb-4 border-b border-[#2B3740]">
+                  <div className="w-10 h-10 bg-[#384D58] text-white flex items-center justify-center flex-shrink-0">
+                    <CheckCircle2 className="w-5 h-5 text-white" />
+                  </div>
+                  <div>
+                    <span className="font-mono text-[10px] tracking-widest text-[#A0B2BD] uppercase block">
+                      Staged Consultation Intake
+                    </span>
+                    <h3 className="font-serif text-2xl font-normal text-white">
+                      Brief Formatted &amp; Compiled
+                    </h3>
+                  </div>
                 </div>
-                <h3 className="font-serif text-3xl font-normal text-white">
-                  Consultation Brief Received
-                </h3>
-                <p className="font-sans text-sm text-[#A0B2BD] max-w-md mx-auto leading-relaxed">
-                  Thank you, {formData.clientName}. Your architectural brief has been logged at our
-                  Bhadravati studio. An architect from our practice group will review the project
-                  constraints and respond within 48 business hours.
-                </p>
-                <div className="pt-6">
+
+                <div className="p-4 bg-[#14171A] border border-[#2B3740] font-mono text-[11px] text-[#A0B2BD] leading-relaxed whitespace-pre-wrap select-all">
+                  {getFormattedBrief()}
+                </div>
+
+                <div className="p-4 bg-[#232C33] border border-[#384D58] text-xs text-[#E8EDF0] space-y-2">
+                  <div className="flex items-center gap-2 font-mono text-[10px] tracking-wider text-[#A0B2BD] uppercase">
+                    <span className="w-1.5 h-1.5 bg-[#A0B2BD]" />
+                    <span>Direct Correspondence Protocol</span>
+                  </div>
+                  <p className="font-sans text-xs text-[#A0B2BD] leading-relaxed">
+                    Direct automated SMTP relay is currently staged pending final client email routing. To ensure direct receipt by the Linehaus studio group, you may copy this formatted brief or open it in your email client.
+                  </p>
+                </div>
+
+                <div className="flex flex-wrap items-center gap-4 pt-2">
+                  <button
+                    type="button"
+                    onClick={handleCopyBrief}
+                    className="px-5 py-3 text-xs font-mono tracking-widest uppercase bg-[#384D58] text-white hover:bg-[#4F6877] transition-colors"
+                  >
+                    {isCopied ? "✓ Brief Copied to Clipboard" : "Copy Brief to Clipboard"}
+                  </button>
+
+                  <a
+                    href={`mailto:${siteConfig.contact.email}?subject=${encodeURIComponent(
+                      `Architectural Commission Enquiry — ${formData.clientName} (${formData.projectTypology})`
+                    )}&body=${encodeURIComponent(getFormattedBrief())}`}
+                    className="px-5 py-3 text-xs font-mono tracking-widest uppercase border border-[#A0B2BD] text-white hover:bg-white hover:text-[#14171A] transition-colors inline-flex items-center gap-2"
+                  >
+                    <span>Open in Email Client</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </a>
+
                   <button
                     type="button"
                     onClick={() => setIsSubmitted(false)}
-                    className="font-mono text-xs tracking-widest text-[#A0B2BD] hover:text-white uppercase border-b border-[#384D58] pb-1"
+                    className="text-xs font-mono text-[#8C9EA9] hover:text-white uppercase ml-auto"
                   >
-                    Submit Another Commission Brief
+                    Edit Brief
                   </button>
                 </div>
               </div>

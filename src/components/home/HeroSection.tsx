@@ -21,15 +21,15 @@ export const HeroSection: React.FC = () => {
 
       <Container size="wide">
         {/* Architectural Meta Bar (Top Datum) */}
-        <div className="flex flex-wrap items-center justify-between gap-4 pb-6 mb-8 border-b border-[#DFDBD2] text-[11px] font-mono tracking-widest uppercase text-[#545F68]">
-          <div className="flex items-center gap-3">
+        <div className="flex flex-wrap items-center justify-between gap-3 pb-6 mb-8 border-b border-[#DFDBD2] text-[10px] sm:text-[11px] font-mono tracking-wider sm:tracking-widest uppercase text-[#545F68]">
+          <div className="flex flex-wrap items-center gap-2 sm:gap-3">
             <span className="inline-block w-2 h-2 bg-[#384D58]" />
             <span className="text-[#14171A] font-medium">LINEHAUS ARCHITECTS</span>
             <span className="text-[#A0B2BD]">/</span>
             <span>{siteConfig.location.city}, {siteConfig.location.state}</span>
           </div>
 
-          <div className="flex items-center gap-6">
+          <div className="flex flex-wrap items-center gap-3 sm:gap-6">
             <span className="hidden sm:inline">
               REGIONAL DATUM · {siteConfig.location.coordinates.latitude}, {siteConfig.location.coordinates.longitude}
             </span>
@@ -40,7 +40,7 @@ export const HeroSection: React.FC = () => {
         {/* Primary Statement & Manifesto Headline */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-12 md:mb-16">
           <div className="lg:col-span-8">
-            <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-[5.25rem] font-normal leading-[1.05] tracking-tight text-[#14171A]">
+            <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-[5.25rem] font-normal leading-[1.08] tracking-tight text-[#14171A]">
               Architecture of Purpose <br />
               <span className="italic text-[#384D58]">&amp; Spatial Clarity.</span>
             </h1>
@@ -52,7 +52,7 @@ export const HeroSection: React.FC = () => {
               residences, luxury estates, and environments shaped by climate, structural honesty, and
               practical living.
             </p>
-            <div className="flex items-center gap-4 text-xs font-mono tracking-widest text-[#384D58] uppercase">
+            <div className="flex flex-wrap items-center gap-2 sm:gap-4 text-[10px] sm:text-xs font-mono tracking-wider sm:tracking-widest text-[#384D58] uppercase">
               <span>BHADRAVATI</span>
               <span>·</span>
               <span>KARNATAKA</span>
@@ -137,7 +137,7 @@ export const HeroSection: React.FC = () => {
         </div>
 
         {/* Lower Datum Indicator */}
-        <div className="mt-12 pt-6 border-t border-[#DFDBD2] flex items-center justify-between text-xs font-mono tracking-widest text-[#545F68] uppercase">
+        <div className="mt-12 pt-6 border-t border-[#DFDBD2] flex flex-wrap items-center justify-between gap-3 text-[10px] sm:text-xs font-mono tracking-wider sm:tracking-widest text-[#545F68] uppercase">
           <a
             href="#practice"
             className="inline-flex items-center gap-2 hover:text-[#14171A] transition-colors"

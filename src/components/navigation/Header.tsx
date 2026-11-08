@@ -100,7 +100,7 @@ export const Header: React.FC = () => {
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden p-2 text-[#14171A] hover:text-[#384D58] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#384D58]"
+              className="lg:hidden p-2 text-[#14171A] hover:text-[#384D58] flex-shrink-0 ml-auto focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#384D58]"
               aria-expanded={mobileMenuOpen}
               aria-label="Toggle navigation menu"
             >
