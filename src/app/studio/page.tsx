@@ -1,10 +1,9 @@
 import { Metadata } from "next";
 import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
-import { siteConfig } from "@/data/siteConfig";
 import { philosophyData } from "@/data/philosophy";
 import Link from "next/link";
-import { ArrowUpRight, Compass, Shield, SunMedium, Wind } from "lucide-react";
+import { ArrowUpRight, Compass, SunMedium, Wind } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Studio & Philosophy",
@@ -42,7 +41,7 @@ export default function StudioPage() {
               <span className="text-[#14171A] font-medium text-sm">Bhadravati, Karnataka</span>
             </div>
             <div>
-              <span className="text-[#88939C] uppercase block mb-1">Coordinates</span>
+              <span className="text-[#88939C] uppercase block mb-1">Regional Datum</span>
               <span className="text-[#14171A] font-medium text-sm">13.8485° N, 75.7042° E</span>
             </div>
             <div>
@@ -50,8 +49,8 @@ export default function StudioPage() {
               <span className="text-[#384D58] font-medium text-sm">Functional Architecture</span>
             </div>
             <div>
-              <span className="text-[#88939C] uppercase block mb-1">Standard</span>
-              <span className="text-[#14171A] font-medium text-sm">Council of Architecture (India)</span>
+              <span className="text-[#88939C] uppercase block mb-1">Regulatory Standards</span>
+              <span className="text-[#14171A] font-medium text-sm">Council of Architecture Norms</span>
             </div>
           </div>
         </Container>

@@ -5,7 +5,6 @@ import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { ArchitecturalImage } from "@/components/ui/ArchitecturalImage";
 import { projectsData } from "@/data/projects";
-import { ProjectTypology } from "@/types";
 import { ArrowUpRight } from "lucide-react";
 
 export default function ProjectsPage() {
@@ -33,23 +32,31 @@ export default function ProjectsPage() {
           <div className="flex items-center gap-3 mb-4 text-xs font-mono tracking-[0.25em] text-[#384D58] uppercase">
             <span>[PORTFOLIO ARCHIVE]</span>
             <span>·</span>
-            <span>{projectsData.length} DOCUMENTED COMMISSIONS</span>
+            <span>{projectsData.length} ARCHITECTURAL TYPOLOGY STUDIES</span>
           </div>
 
           <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-normal text-[#14171A] leading-[1.08]">
-            Selected Works <br />
-            <span className="italic text-[#384D58]">&amp; Case Studies.</span>
+            Typology Studies <br />
+            <span className="italic text-[#384D58]">&amp; Spatial Investigations.</span>
           </h1>
 
-          <p className="mt-6 font-sans text-base sm:text-lg text-[#545F68] font-light max-w-2xl leading-relaxed">
-            An editorial archive of private residences, luxury estates, and multidisciplinary
+          <p className="mt-6 font-sans text-base sm:text-lg text-[#545F68] font-light max-w-3xl leading-relaxed">
+            An architectural study archive of private residences, luxury estates, and multidisciplinary
             commissions designed with spatial purpose, environmental intelligence, and honest materiality.
           </p>
 
+          {/* Transparent Provisional Notice */}
+          <div className="mt-8 p-4 bg-[#F1EFEA] border border-[#DFDBD2] text-xs font-mono text-[#545F68] flex items-center gap-3">
+            <span className="w-2 h-2 bg-[#384D58] flex-shrink-0" />
+            <span>
+              NOTE: Curated reference imagery illustrates intended spatial volumes, daylighting, and material detailing. Official client commission documentation is updated on a rolling basis.
+            </span>
+          </div>
+
           {/* Typology Filter Bar */}
-          <div className="flex flex-wrap items-center gap-2 mt-10 pt-8 border-t border-[#DFDBD2]">
+          <div className="flex flex-wrap items-center gap-2 mt-8 pt-8 border-t border-[#DFDBD2]">
             <span className="font-mono text-xs tracking-widest text-[#88939C] uppercase mr-3">
-              Filter By Typology:
+              Filter By Discipline:
             </span>
             {filterTabs.map((tab) => (
               <button
@@ -95,7 +102,7 @@ export default function ProjectsPage() {
                     <span className="text-[#384D58] font-medium">
                       [0{idx + 1}] {project.typology}
                     </span>
-                    <span>{project.year}</span>
+                    <span className="text-[10px] text-[#88939C]">STUDIO STUDY</span>
                   </div>
 
                   <h3 className="font-serif text-2xl font-normal text-[#14171A] group-hover:text-[#384D58] transition-colors mb-2">
@@ -120,7 +127,7 @@ export default function ProjectsPage() {
                     href={`/projects/${project.slug}`}
                     className="inline-flex items-center gap-1.5 text-[#14171A] group-hover:text-[#384D58] font-medium tracking-wider uppercase transition-colors"
                   >
-                    <span>Examine Case Study</span>
+                    <span>Examine Study</span>
                     <ArrowUpRight className="w-3.5 h-3.5" />
                   </Link>
                 </div>

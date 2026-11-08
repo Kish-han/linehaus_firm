@@ -111,7 +111,7 @@ export const StudioPreviewSection: React.FC = () => {
 
             <div className="pt-6 mt-4 border-t border-[#DFDBD2]">
               <span className="font-mono text-[11px] text-[#88939C] uppercase">
-                COA Registered Practice Standards · Karnataka
+                Council of Architecture (India) Practice Norms · Bhadravati, Karnataka
               </span>
             </div>
           </div>

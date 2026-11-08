@@ -7,12 +7,20 @@ import { projectsData } from "@/data/projects";
 import { ArrowDown, ArrowUpRight } from "lucide-react";
 
 export const HeroSection: React.FC = () => {
-  const featuredProject = projectsData[0]; // The Courtyard Residence
+  const featuredProject = projectsData[0]; // Typology Study 01
 
   return (
     <section className="relative pt-6 pb-16 md:pt-10 md:pb-24 border-b border-[#DFDBD2]">
+      {/* Architectural Corner Registration Marks */}
+      <div className="absolute top-3 left-3 pointer-events-none opacity-30 hidden sm:block">
+        <span className="font-mono text-[9px] text-[#384D58]">+ REG. 01/24</span>
+      </div>
+      <div className="absolute top-3 right-3 pointer-events-none opacity-30 hidden sm:block">
+        <span className="font-mono text-[9px] text-[#384D58]">SCALE: 1:100 @ A1 +</span>
+      </div>
+
       <Container size="wide">
-        {/* Architectural Meta Bar (Top Coordinates & Datum) */}
+        {/* Architectural Meta Bar (Top Datum) */}
         <div className="flex flex-wrap items-center justify-between gap-4 pb-6 mb-8 border-b border-[#DFDBD2] text-[11px] font-mono tracking-widest uppercase text-[#545F68]">
           <div className="flex items-center gap-3">
             <span className="inline-block w-2 h-2 bg-[#384D58]" />
@@ -23,9 +31,9 @@ export const HeroSection: React.FC = () => {
 
           <div className="flex items-center gap-6">
             <span className="hidden sm:inline">
-              LAT {siteConfig.location.coordinates.latitude} · LON {siteConfig.location.coordinates.longitude}
+              REGIONAL DATUM · {siteConfig.location.coordinates.latitude}, {siteConfig.location.coordinates.longitude}
             </span>
-            <span className="text-[#384D58] font-medium">EST. {siteConfig.establishedYear}</span>
+            <span className="text-[#384D58] font-medium">STUDIO EST. {siteConfig.establishedYear}</span>
           </div>
         </div>
 
@@ -40,9 +48,9 @@ export const HeroSection: React.FC = () => {
 
           <div className="lg:col-span-4 lg:pl-6 pb-2">
             <p className="font-sans text-sm sm:text-base text-[#545F68] font-light leading-relaxed mb-4">
-              A multidisciplinary architectural studio practicing Functional Architecture—crafting
+              A multidisciplinary practice dedicated to Functional Architecture—sculpting private
               residences, luxury estates, and environments shaped by climate, structural honesty, and
-              the rituals of daily living.
+              practical living.
             </p>
             <div className="flex items-center gap-4 text-xs font-mono tracking-widest text-[#384D58] uppercase">
               <span>BHADRAVATI</span>
@@ -63,10 +71,10 @@ export const HeroSection: React.FC = () => {
                 src={featuredProject.heroImage.src}
                 alt={featuredProject.heroImage.alt}
                 aspectRatio="16/10"
-                caption="Flagship Monolithic Residence — Climate-Responsive Courtyard Living (Karnataka)"
+                caption="Typology Study: Climate-Responsive Courtyard Living (Karnataka River Basin)"
                 isHero={true}
                 priority={true}
-                overlayText="FLAGSHIP COMMISSION · THE COURTYARD RESIDENCE"
+                overlayText="TYPOLOGY STUDY · THE COURTYARD HOUSE"
               />
             </div>
           </div>
@@ -76,19 +84,19 @@ export const HeroSection: React.FC = () => {
             <div className="space-y-6">
               <div className="flex items-center justify-between pb-4 border-b border-[#DFDBD2]">
                 <span className="font-mono text-xs tracking-[0.2em] text-[#384D58] font-medium uppercase">
-                  [PRJ_01] FEATURED WORK
+                  [TYP_01] TYPOLOGY PROTOTYPE
                 </span>
-                <span className="font-mono text-[11px] text-[#545F68] uppercase">
-                  {featuredProject.status}
+                <span className="font-mono text-[10px] text-[#384D58] uppercase border border-[#384D58]/30 px-1.5 py-0.5">
+                  CONCEPT STUDY
                 </span>
               </div>
 
               <div>
                 <span className="font-mono text-[10px] tracking-widest uppercase text-[#545F68] block mb-1">
-                  {featuredProject.typology}
+                  {featuredProject.typology} Prototype
                 </span>
                 <h3 className="font-serif text-2xl sm:text-3xl font-normal text-[#14171A]">
-                  {featuredProject.title}
+                  The Courtyard House
                 </h3>
                 <p className="mt-2 text-xs font-sans text-[#545F68] leading-relaxed">
                   {featuredProject.subtitle}
@@ -98,19 +106,19 @@ export const HeroSection: React.FC = () => {
               {/* Architectural Metrics Table */}
               <div className="grid grid-cols-2 gap-4 pt-4 border-t border-[#DFDBD2] text-xs">
                 <div>
-                  <span className="font-mono text-[10px] text-[#88939C] uppercase block">Location</span>
-                  <span className="font-sans font-medium text-[#14171A]">{featuredProject.location}</span>
+                  <span className="font-mono text-[10px] text-[#88939C] uppercase block">Regional Context</span>
+                  <span className="font-sans font-medium text-[#14171A]">Bhadravati, KA</span>
                 </div>
                 <div>
-                  <span className="font-mono text-[10px] text-[#88939C] uppercase block">Built Area</span>
+                  <span className="font-mono text-[10px] text-[#88939C] uppercase block">Spatial Area</span>
                   <span className="font-mono font-medium text-[#14171A]">{featuredProject.area}</span>
                 </div>
                 <div>
-                  <span className="font-mono text-[10px] text-[#88939C] uppercase block">Climate Strategy</span>
-                  <span className="font-sans text-[11px] text-[#14171A]">Stack Ventilation Court</span>
+                  <span className="font-mono text-[10px] text-[#88939C] uppercase block">Climatic System</span>
+                  <span className="font-sans text-[11px] text-[#14171A]">Stack Ventilation Lung</span>
                 </div>
                 <div>
-                  <span className="font-mono text-[10px] text-[#88939C] uppercase block">Delivery</span>
+                  <span className="font-mono text-[10px] text-[#88939C] uppercase block">Execution Mode</span>
                   <span className="font-sans text-[11px] text-[#14171A]">Turnkey Architecture</span>
                 </div>
               </div>
@@ -121,7 +129,7 @@ export const HeroSection: React.FC = () => {
                 href={`/projects/${featuredProject.slug}`}
                 className="w-full inline-flex items-center justify-between px-5 py-3.5 text-xs font-sans font-medium tracking-[0.2em] uppercase bg-[#14171A] text-[#F8F7F4] hover:bg-[#384D58] transition-colors"
               >
-                <span>Examine Case Study</span>
+                <span>Examine Typology Study</span>
                 <ArrowUpRight className="w-4 h-4" />
               </Link>
             </div>
@@ -139,7 +147,7 @@ export const HeroSection: React.FC = () => {
           </a>
 
           <div>
-            <span>01 / SELECTED WORKS ({projectsData.length.toString().padStart(2, "0")})</span>
+            <span>ARCHIVE OF {projectsData.length.toString().padStart(2, "0")} ARCHITECTURAL STUDIES</span>
           </div>
         </div>
       </Container>

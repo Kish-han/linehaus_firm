@@ -5,37 +5,44 @@ export const siteConfig = {
   tagline: "Architecture of Purpose & Spatial Clarity",
   philosophyTitle: "Functional Architecture",
   establishedYear: "2024",
+  brandAssetPath: "/brand/linehaus-logo.svg",
   location: {
     city: "Bhadravati",
     state: "Karnataka",
     country: "India",
     region: "Malnad Fringe / Central Karnataka",
+    // Regional geographic reference datum for Bhadravati
     coordinates: {
       latitude: "13.8485° N",
       longitude: "75.7042° E",
+      datumLabel: "Regional Geographic Reference (Bhadravati)",
     },
     addressDisplay: "Bhadravati, Karnataka 577301, India",
-    // Studio consultation visit by appointment
-    consultationNote: "Consultations and site visits strictly by prior appointment.",
+    consultationNote:
+      "Studio consultations and site feasibility visits are conducted strictly by prior appointment.",
   },
   contact: {
-    // Note: Official phone & direct email provisional until client confirms custom domain inbox
+    // Official email for preliminary project correspondence
     email: "enquiry@linehausarchitects.com",
-    phone: "+91 (Contact Available Upon Enquiry)",
-    phoneDisplay: "+91 (Enquiry Desk)",
-    officeHours: "Monday – Saturday: 09:30 – 18:30 IST",
-    instagramUrl: "https://instagram.com/linehausarchitects",
-    linkedinUrl: "https://linkedin.com/company/linehausarchitects",
+    deskProtocol: "Direct architectural intake via digital consultation brief",
+    appointmentOnly: true,
+    consultationSchedule:
+      "Consultation meetings scheduled by appointment following initial brief review.",
+    socialProfiles: {
+      instagramStatus: "Official studio social channels pending release",
+      linkedinStatus: "Official studio profile pending release",
+    },
   },
   compliance: {
-    coaRegistrationNote: "Architectural practice compliant with Council of Architecture (India) norms.",
+    coaRegistrationNote:
+      "Practice operates in accordance with Council of Architecture (India) norms. Formal registration details provided upon consultation.",
     disclaimer:
-      "All project drawings, architectural representations, and conceptual schemes published on this digital presence are the intellectual property of Linehaus Architects.",
+      "All conceptual drawings, architectural studies, and representations published on this digital presence are the intellectual property of Linehaus Architects.",
   },
   navLinks: [
     { label: "Practice", href: "/#practice" },
-    { label: "Selected Works", href: "/projects" },
-    { label: "Services", href: "/services" },
+    { label: "Portfolio Studies", href: "/projects" },
+    { label: "Disciplines", href: "/services" },
     { label: "Studio", href: "/studio" },
     { label: "Contact", href: "/contact" },
   ],
@@ -46,12 +53,12 @@ export const siteConfig = {
     keywords: [
       "Linehaus Architects",
       "Architects in Bhadravati",
-      "Karnataka Architects",
-      "Functional Architecture",
-      "Luxury Residential Architects Karnataka",
+      "Karnataka Architecture Studio",
+      "Functional Architecture India",
+      "Climate Responsive Architecture Karnataka",
       "Turnkey Architecture Studio",
       "Modern House Design Shimoga Bhadravati",
-      "Interior Architecture Studio India",
+      "Residential Interior Architecture",
     ],
   },
 };

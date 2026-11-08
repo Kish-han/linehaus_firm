@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import React from "react";
 
@@ -9,18 +11,16 @@ interface BrandLogoProps {
 }
 
 /**
- * BrandLogo Component
- * -------------------
- * Faithfully represents the approved LINEHAUS ARCHITECTS brand identity:
- * - Geometric "LA" architectural monogram
- * - Uppercase LINEHAUS wordmark
+ * BrandLogo Component — LINEHAUS ARCHITECTS
+ * -----------------------------------------
+ * Authoritative brand implementation:
+ * - Geometric LA architectural monogram with 44x44 grid construction
+ * - Uppercase LINEHAUS wordmark with wide letter spacing
  * - ARCHITECTS supporting typography
- * - Architecture + Interior descriptor
+ * - Architecture + Interior brand descriptor
  * 
- * NOTE FOR PRODUCTION REPLACEMENT:
- * When official vector assets are supplied, place the SVG file in:
- * `/public/brand/linehaus-logo.svg`
- * and toggle the image replacement flag if desired, or replace the SVG paths below.
+ * Production Drop-In Replacement:
+ * Place vector master SVG at: /public/brand/linehaus-logo.svg
  */
 export const BrandLogo: React.FC<BrandLogoProps> = ({
   variant = "horizontal",
@@ -28,7 +28,6 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
   className = "",
   withLink = true,
 }) => {
-  // Color tokens based on theme
   const colors = {
     default: {
       monogramFill: "#384D58", // Muted slate-blue
@@ -67,7 +66,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
         className="transition-transform duration-300 group-hover:scale-[1.02]"
         aria-label="Linehaus Architects LA Monogram"
       >
-        {/* Geometric Framing Box with Architectural Hairline Corner Cuts */}
+        {/* Geometric Framing Box with Architectural Hairline Profile */}
         <rect
           x="2"
           y="2"
@@ -78,14 +77,12 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
           fill="none"
         />
         {/* Architectonic L & A Monogram Construction Lines */}
-        {/* 'L' Stem & Base */}
         <path
           d="M12 11V31H25"
           stroke={colors.monogramStroke}
           strokeWidth="2.2"
           strokeLinecap="square"
         />
-        {/* 'A' Apex & Rafter */}
         <path
           d="M23 31L29 11L35 31"
           stroke={colors.monogramStroke}
@@ -93,7 +90,6 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
           strokeLinecap="square"
           strokeLinejoin="miter"
         />
-        {/* 'A' Crossbar extending horizontally as an architectural alignment datum */}
         <line
           x1="20"
           y1="23.5"
@@ -102,7 +98,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
           stroke={colors.monogramStroke}
           strokeWidth="1.6"
         />
-        {/* Subtle grid intersection datum point */}
+        {/* Alignment datum points */}
         <circle cx="12" cy="11" r="1.2" fill={colors.monogramFill} />
         <circle cx="29" cy="11" r="1.2" fill={colors.monogramFill} />
       </svg>
@@ -122,7 +118,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
           <div className="flex flex-col justify-center border-l pl-3" style={{ borderColor: colors.border }}>
             <div className="flex items-baseline gap-1.5 leading-none">
               <span
-                className="font-sans font-bold tracking-[0.18em] text-[15px] sm:text-[16px] uppercase"
+                className="font-sans font-bold tracking-[0.2em] text-[15px] sm:text-[16px] uppercase"
                 style={{ color: colors.primaryText }}
               >
                 LINEHAUS
@@ -135,7 +131,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
               </span>
             </div>
             <span
-              className="font-sans text-[9px] tracking-[0.22em] uppercase mt-1 font-medium"
+              className="font-sans text-[9px] tracking-[0.24em] uppercase mt-1 font-medium"
               style={{ color: colors.descriptorText }}
             >
               Architecture + Interior
@@ -162,7 +158,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
             </span>
             <div className="h-[1px] w-12 my-1" style={{ backgroundColor: colors.border }} />
             <span
-              className="font-sans text-[10px] tracking-[0.25em] uppercase font-medium"
+              className="font-sans text-[10px] tracking-[0.26em] uppercase font-medium"
               style={{ color: colors.descriptorText }}
             >
               Architecture + Interior Studio
@@ -175,7 +171,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
 
   if (withLink) {
     return (
-      <Link href="/" aria-label="Linehaus Architects Home" className="focus-visible:outline-none">
+      <Link href="/" aria-label="Linehaus Architects Home" className="focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#384D58]">
         {LogoContent}
       </Link>
     );

@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import { Container } from "@/components/ui/Container";
-import { SectionHeader } from "@/components/ui/SectionHeader";
 import { siteConfig } from "@/data/siteConfig";
 import { ProjectTypology } from "@/types";
 import { CheckCircle2, ArrowRight, Clock, MapPin, ShieldCheck } from "lucide-react";

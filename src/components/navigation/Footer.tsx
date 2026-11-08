@@ -15,8 +15,8 @@ export const Footer: React.FC = () => {
           <div className="md:col-span-5 space-y-6">
             <BrandLogo variant="stacked" theme="light" />
             <p className="font-sans text-sm text-[#A0B2BD] font-light leading-relaxed max-w-sm">
-              A multidisciplinary architecture and interior practice committed to functional clarity, 
-              climatic intelligence, and thoughtful residential and turnkey architectural solutions.
+              A multidisciplinary architecture and interior atelier committed to functional clarity, 
+              climatic intelligence, and thoughtful residential and turnkey architectural delivery.
             </p>
             <div className="pt-2">
               <span className="inline-block px-2.5 py-1 text-[10px] font-mono tracking-widest uppercase bg-[#273740] text-[#A0B2BD] border border-[#384D58]">
@@ -33,7 +33,7 @@ export const Footer: React.FC = () => {
             <ul className="space-y-2.5 text-xs font-sans tracking-wide text-[#E8EDF0]">
               <li>
                 <Link href="/projects?typology=Residential" className="hover:text-white transition-colors">
-                  Private Residences & Homes
+                  Private Residences &amp; Homes
                 </Link>
               </li>
               <li>
@@ -48,17 +48,17 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <Link href="/services#interior" className="hover:text-white transition-colors">
-                  Interior Architecture & Millwork
+                  Interior Architecture &amp; Millwork
                 </Link>
               </li>
               <li>
                 <Link href="/projects?typology=Commercial" className="hover:text-white transition-colors">
-                  Commercial & Institutional
+                  Commercial &amp; Institutional
                 </Link>
               </li>
               <li>
                 <Link href="/services#landscape" className="hover:text-white transition-colors">
-                  Landscape & Microclimate
+                  Landscape &amp; Microclimate
                 </Link>
               </li>
             </ul>
@@ -67,16 +67,16 @@ export const Footer: React.FC = () => {
           {/* Column 3: Studio Coordinates & Consultation */}
           <div className="md:col-span-4 space-y-4">
             <span className="font-mono text-[11px] tracking-[0.25em] text-[#A0B2BD] uppercase block">
-              Consultation & Desk
+              Consultation &amp; Studio Desk
             </span>
             <div className="space-y-2 text-xs font-sans text-[#E8EDF0]">
               <p className="leading-relaxed">
-                <strong className="text-white font-medium">Bhadravati Studio:</strong>
+                <strong className="text-white font-medium">Bhadravati Studio Base:</strong>
                 <br />
                 {siteConfig.location.addressDisplay}
               </p>
               <p className="font-mono text-[11px] text-[#A0B2BD]">
-                LAT {siteConfig.location.coordinates.latitude} · LON {siteConfig.location.coordinates.longitude}
+                {siteConfig.location.coordinates.latitude}, {siteConfig.location.coordinates.longitude} (Regional Datum)
               </p>
               <p className="text-[11px] text-[#8C9EA9] italic pt-1">
                 {siteConfig.location.consultationNote}
@@ -88,7 +88,7 @@ export const Footer: React.FC = () => {
                 href="/contact"
                 className="inline-flex items-center gap-2 text-xs font-mono tracking-widest uppercase text-white hover:text-[#A0B2BD] transition-colors border-b border-[#384D58] pb-1"
               >
-                <span>Initiate Project Consultation</span>
+                <span>Initiate Project Brief</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
             </div>
@@ -107,7 +107,7 @@ export const Footer: React.FC = () => {
           </div>
 
           <div className="flex items-center gap-6 text-[10px]">
-            <span>DESIGN & ARCHITECTURAL DISCIPLINE</span>
+            <span>FUNCTIONAL ARCHITECTURE · SPATIAL CLARITY</span>
             <span className="text-[#384D58]">/</span>
             <span>KARNATAKA · INDIA</span>
           </div>

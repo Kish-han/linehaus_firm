@@ -72,8 +72,17 @@ export default function RootLayout({
       className={`${cormorant.variable} ${plusJakarta.variable} ${jetbrainsMono.variable} scroll-smooth antialiased`}
     >
       <body className="min-h-screen bg-[#F8F7F4] text-[#14171A] selection:bg-[#384D58] selection:text-[#F8F7F4] flex flex-col justify-between">
+        {/* WCAG 2.1 AA Accessible Skip Link */}
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-[#14171A] focus:text-[#F8F7F4] focus:text-xs focus:font-mono focus:tracking-widest focus:outline-none focus:ring-2 focus:ring-[#384D58]"
+        >
+          Skip to main content
+        </a>
         <Header />
-        <main className="flex-grow pt-20 md:pt-24">{children}</main>
+        <main id="main-content" className="flex-grow pt-20 md:pt-24 focus:outline-none">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

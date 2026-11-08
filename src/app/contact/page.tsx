@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Container } from "@/components/ui/Container";
 import { siteConfig } from "@/data/siteConfig";
 import { ProjectIntakeSection } from "@/components/home/ProjectIntakeSection";
-import { Mail, MapPin, Clock, ShieldCheck, Compass } from "lucide-react";
+import { Mail, MapPin, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Contact & Studio Desk",
@@ -72,11 +72,11 @@ export default function ContactPage() {
           <div className="p-8 bg-[#F1EFEA] border border-[#DFDBD2] space-y-4">
             <div className="flex items-center gap-2 text-xs font-mono text-[#384D58] uppercase">
               <Clock className="w-4 h-4" />
-              <span>Practice Hours</span>
+              <span>Studio Protocols</span>
             </div>
-            <h3 className="font-serif text-2xl text-[#14171A]">Studio Operating Hours</h3>
+            <h3 className="font-serif text-2xl text-[#14171A]">Consultation By Appointment</h3>
             <p className="font-sans text-xs text-[#545F68] leading-relaxed">
-              {siteConfig.contact.officeHours}
+              To give each commission individual design attention, studio meetings and on-site feasibility evaluations are scheduled strictly by prior appointment.
             </p>
             <p className="font-sans text-xs text-[#384D58] italic pt-2 border-t border-[#DFDBD2]">
               {siteConfig.location.consultationNote}

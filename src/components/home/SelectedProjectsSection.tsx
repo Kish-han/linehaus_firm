@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
-import { SectionHeader } from "@/components/ui/SectionHeader";
 import { ArchitecturalImage } from "@/components/ui/ArchitecturalImage";
 import { projectsData } from "@/data/projects";
 import { ArrowUpRight } from "lucide-react";
@@ -20,11 +19,11 @@ export const SelectedProjectsSection: React.FC = () => {
                 [02]
               </span>
               <span className="font-mono text-xs tracking-[0.25em] uppercase text-[#384D58]">
-                Curated Architecture &amp; Interiors
+                Spatial Typology Studies
               </span>
             </div>
             <h2 className="font-serif text-3xl sm:text-5xl font-normal text-[#14171A] tracking-tight">
-              Selected Works
+              Selected Investigations
             </h2>
           </div>
 
@@ -33,7 +32,7 @@ export const SelectedProjectsSection: React.FC = () => {
               href="/projects"
               className="inline-flex items-center gap-2 font-sans text-xs tracking-[0.2em] uppercase font-medium text-[#384D58] hover:text-[#14171A] transition-colors border-b border-[#384D58] pb-1"
             >
-              <span>Explore Complete Archive ({projectsData.length})</span>
+              <span>Explore All Typologies ({projectsData.length})</span>
               <ArrowUpRight className="w-4 h-4" />
             </Link>
           </div>
@@ -54,14 +53,14 @@ export const SelectedProjectsSection: React.FC = () => {
                   <Link
                     href={`/projects/${project.slug}`}
                     className="block overflow-hidden focus-visible:outline-none"
-                    aria-label={`View case study for ${project.title}`}
+                    aria-label={`View study for ${project.title}`}
                   >
                     <ArchitecturalImage
                       src={project.heroImage.src}
                       alt={project.heroImage.alt}
                       aspectRatio="16/10"
                       caption={`${project.title} · ${project.location}`}
-                      overlayText={`[PRJ_0${idx + 1}] · ${project.typology}`}
+                      overlayText={`[TYP_0${idx + 1}] · ${project.typology.toUpperCase()}`}
                     />
                   </Link>
                 </div>
@@ -78,7 +77,7 @@ export const SelectedProjectsSection: React.FC = () => {
                       <span>·</span>
                       <span>{project.typology}</span>
                       <span>·</span>
-                      <span>{project.year}</span>
+                      <span>TYPOLOGY STUDY</span>
                     </div>
 
                     <h3 className="font-serif text-2xl sm:text-3xl md:text-4xl font-normal text-[#14171A] group-hover:text-[#384D58] transition-colors">
@@ -99,12 +98,12 @@ export const SelectedProjectsSection: React.FC = () => {
                   {/* Architectural Specs List */}
                   <div className="grid grid-cols-2 gap-4 py-4 border-y border-[#DFDBD2] text-xs">
                     <div>
-                      <span className="font-mono text-[10px] text-[#88939C] uppercase block">Built Area</span>
+                      <span className="font-mono text-[10px] text-[#88939C] uppercase block">Target Area</span>
                       <span className="font-mono text-xs text-[#14171A]">{project.area}</span>
                     </div>
                     <div>
-                      <span className="font-mono text-[10px] text-[#88939C] uppercase block">Status</span>
-                      <span className="font-sans text-xs text-[#14171A]">{project.status}</span>
+                      <span className="font-mono text-[10px] text-[#88939C] uppercase block">Discipline</span>
+                      <span className="font-sans text-xs text-[#14171A]">{project.typology}</span>
                     </div>
                   </div>
 
@@ -113,7 +112,7 @@ export const SelectedProjectsSection: React.FC = () => {
                       href={`/projects/${project.slug}`}
                       className="inline-flex items-center gap-2 font-sans text-xs tracking-[0.2em] uppercase font-medium text-[#14171A] group-hover:text-[#384D58] transition-colors border-b border-[#14171A] group-hover:border-[#384D58] pb-1"
                     >
-                      <span>Examine Case Study &amp; Drawings</span>
+                      <span>Examine Typology Study &amp; Drawings</span>
                       <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                     </Link>
                   </div>
@@ -129,7 +128,7 @@ export const SelectedProjectsSection: React.FC = () => {
             href="/projects"
             className="inline-flex items-center gap-3 px-8 py-4 text-xs font-sans font-medium tracking-[0.2em] uppercase bg-[#14171A] text-[#F8F7F4] hover:bg-[#384D58] transition-colors"
           >
-            <span>View All Architectural Commissions</span>
+            <span>View All Architectural Typologies</span>
             <ArrowUpRight className="w-4 h-4" />
           </Link>
         </div>

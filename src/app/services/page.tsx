@@ -1,9 +1,8 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
-import { SectionHeader } from "@/components/ui/SectionHeader";
 import { servicesData } from "@/data/services";
-import { Check, ArrowUpRight, Shield, Layers, FileCheck, Hammer } from "lucide-react";
+import { Check, ArrowUpRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Multidisciplinary Services & Turnkey Practice",
