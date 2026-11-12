@@ -76,14 +76,14 @@ export const Header: React.FC = () => {
               })}
             </nav>
 
-            {/* Action Group: Bhadravati Stamp + Enquiry CTA */}
+            {/* Action Group: Studio Location + Enquiry CTA */}
             <div className="hidden sm:flex items-center gap-4">
               <div className="hidden xl:flex flex-col text-right pr-4 border-r border-[#DFDBD2]">
-                <span className="font-mono text-[10px] tracking-widest text-[#384D58] uppercase">
-                  {siteConfig.location.coordinates.latitude}
+                <span className="font-mono text-[10px] tracking-widest text-[#384D58] uppercase font-semibold">
+                  {siteConfig.location.city}
                 </span>
                 <span className="font-mono text-[9px] tracking-wider text-[#545F68]">
-                  {siteConfig.location.city}, KA
+                  Karnataka, India
                 </span>
               </div>
 
@@ -146,7 +146,7 @@ export const Header: React.FC = () => {
                 {siteConfig.location.addressDisplay}
               </p>
               <p className="font-mono text-[10px] text-[#384D58]">
-                {siteConfig.location.coordinates.latitude}, {siteConfig.location.coordinates.longitude}
+                Architecture · Interiors · Construction
               </p>
             </div>
 

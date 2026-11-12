@@ -15,15 +15,18 @@ export const siteConfig = {
     coordinates: {
       latitude: "13.8485° N",
       longitude: "75.7042° E",
-      datumLabel: "Regional Geographic Reference (Bhadravati)",
+      datumLabel: "Bhadravati, Karnataka",
     },
     addressDisplay: "Bhadravati, Karnataka 577301, India",
     consultationNote:
       "Studio consultations and site feasibility visits are conducted strictly by prior appointment.",
   },
   contact: {
-    // Official email for preliminary project correspondence
+    // Official correspondence
     email: "enquiry@linehausarchitects.com",
+    phone: "+91 94800 00000",
+    whatsappNumber: "919480000000",
+    whatsappLink: "https://wa.me/919480000000?text=Hello%20Linehaus%20Architects,%20I%20would%20like%20to%20enquire%20about%20a%20project.",
     deskProtocol: "Direct architectural intake via digital consultation brief",
     appointmentOnly: true,
     consultationSchedule:
@@ -34,8 +37,8 @@ export const siteConfig = {
     },
   },
   compliance: {
-    coaRegistrationNote:
-      "Practice operates in accordance with Council of Architecture (India) norms. Formal registration details provided upon consultation.",
+    standardsNote:
+      "Linehaus Architects operates under strict statutory standards, structural engineering codes, and quality execution norms.",
     disclaimer:
       "All conceptual drawings, architectural studies, and representations published on this digital presence are the intellectual property of Linehaus Architects.",
   },

@@ -71,6 +71,7 @@ export interface StudioPrinciple {
   title: string;
   tagline: string;
   description: string;
+  image?: string;
 }
 
 export interface ProjectEnquiryFormData {

@@ -68,7 +68,7 @@ export default function ServicesPage() {
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 bg-[#A0B2BD]" />
-                  <span>Council of Architecture Compliance</span>
+                  <span>Statutory Code &amp; Quality Compliance</span>
                 </li>
               </ul>
             </div>

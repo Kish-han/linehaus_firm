@@ -91,7 +91,7 @@ export const projectsData: CuratedProject[] = [
       {
         title: "Building Section & Spatial Elevation",
         type: "Section",
-        caption: "Airflow trajectory illustrating stack effect purge through roof clerestory.",
+        caption: "Airflow trajectory illustrating natural air purge through roof clerestory.",
       },
     ],
     featuredOnHome: true,

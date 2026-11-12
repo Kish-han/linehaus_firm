@@ -2,13 +2,14 @@ import { Metadata } from "next";
 import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { philosophyData } from "@/data/philosophy";
+import { ArchitecturalImage } from "@/components/ui/ArchitecturalImage";
 import Link from "next/link";
-import { ArrowUpRight, Compass, Users, CheckCircle2, ShieldCheck, PenTool, HardHat, FileText } from "lucide-react";
+import { ArrowUpRight, Compass, Users, HardHat, PenTool, FileText, CheckCircle2, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Studio & Philosophy | Approach & Team",
+  title: "Studio | Philosophy, Founder & Approach",
   description:
-    "Discover Linehaus Architects: A multidisciplinary practice rooted in Bhadravati, Karnataka, championing Functional Architecture, spatial clarity, and honest materiality.",
+    "Discover Linehaus Architects: A multidisciplinary architecture, interior, and turnkey construction practice based in Bhadravati, Karnataka.",
 };
 
 export default function StudioPage() {
@@ -49,20 +50,20 @@ export default function StudioPage() {
 
   const teamDisciplines = [
     {
-      role: "Architectural Practice Group",
-      focus: "Spatial Planning, Structural Integrity & Master Design",
+      role: "Architectural Design Group",
+      focus: "Spatial Planning, Structural Clarity & Master Design",
       description:
-        "Led by certified architects operating under Council of Architecture norms, orchestrating spatial proportion, structural grids, and statutory code compliance.",
+        "Dedicated to spatial proportion, structural grids, natural daylighting, and statutory building code compliance across residential and commercial scales.",
     },
     {
       role: "Interior & Millwork Atelier",
-      focus: "Joinery, Tactile Materiality & Bespoke Lighting",
+      focus: "Custom Joinery, Tactile Materiality & Bespoke Lighting",
       description:
-        "Specialists in built-in cabinetry, natural stone finishes, acoustic ceiling profiles, and custom hardware integration tailored for refined everyday use.",
+        "Specialists in built-in cabinetry, natural stone finishes, acoustic ceiling profiles, and tailored hardware integration designed for refined everyday living.",
     },
     {
       role: "Structural & Engineering Associates",
-      focus: "Seismic Design, Foundation Engineering & MEP",
+      focus: "Foundation Engineering, Load Optimization & MEP",
       description:
         "Consulting structural and building services engineers verifying concrete load paths, soil strata bearing capacities, rainwater harvesting, and concealed electrical runs.",
     },
@@ -80,21 +81,20 @@ export default function StudioPage() {
       <section className="pb-16 md:pb-24 border-b border-[#DFDBD2]">
         <Container size="wide">
           <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-4 text-[10px] sm:text-xs font-mono tracking-wider sm:tracking-[0.25em] text-[#384D58] uppercase">
-            <span>[PRACTICE PROFILE]</span>
+            <span>[STUDIO PROFILE]</span>
             <span>·</span>
             <span>BHADRAVATI, KARNATAKA</span>
           </div>
 
           <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-normal text-[#14171A] leading-[1.08] max-w-5xl">
-            We build for daily life, <br />
-            <span className="italic text-[#384D58]">proportion, and permanence.</span>
+            Designing with purpose. <br />
+            <span className="italic text-[#384D58]">Building with precision.</span>
           </h1>
 
           <p className="mt-8 font-sans text-base sm:text-xl text-[#545F68] font-light max-w-3xl leading-relaxed">
-            Linehaus Architects is a multidisciplinary architecture and interior atelier based in
-            Bhadravati, Karnataka. We believe that architectural value is created when spaces are
-            conceived with purpose, detailed with structural honesty, and built to withstand the
-            rigours of time and everyday living.
+            LINEHAUS ARCHITECTS is a multidisciplinary architectural practice based in Bhadravati,
+            Karnataka. We bring together architecture, interiors and construction to create thoughtful
+            spaces that balance functionality, aesthetics and lasting quality.
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-12 mt-12 border-t border-[#DFDBD2] text-xs font-mono">
@@ -103,11 +103,11 @@ export default function StudioPage() {
               <span className="text-[#14171A] font-medium text-sm">Bhadravati, Karnataka</span>
             </div>
             <div>
-              <span className="text-[#88939C] uppercase block mb-1">Regional Setting</span>
-              <span className="text-[#14171A] font-medium text-sm">Central Karnataka</span>
+              <span className="text-[#88939C] uppercase block mb-1">Disciplines</span>
+              <span className="text-[#14171A] font-medium text-sm">Architecture · Interiors · Build</span>
             </div>
             <div>
-              <span className="text-[#88939C] uppercase block mb-1">Architectural Ethos</span>
+              <span className="text-[#88939C] uppercase block mb-1">Design Philosophy</span>
               <span className="text-[#384D58] font-medium text-sm">Functional Architecture</span>
             </div>
             <div>
@@ -118,80 +118,173 @@ export default function StudioPage() {
         </Container>
       </section>
 
-      {/* 01: The Manifesto & Philosophy */}
+      {/* Studio Story & Architectural Photography */}
       <section className="py-20 md:py-28 border-b border-[#DFDBD2]">
+        <Container size="wide">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div className="lg:col-span-6">
+              <ArchitecturalImage
+                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80"
+                alt="Architectural detailing and tactile material harmony"
+                aspectRatio="16/10"
+                caption="Tactile materiality and enduring proportion in residential form."
+              />
+            </div>
+
+            <div className="lg:col-span-6 space-y-6">
+              <span className="font-mono text-xs tracking-widest text-[#384D58] uppercase block">
+                The Studio Story
+              </span>
+              <h2 className="font-serif text-3xl sm:text-4xl font-normal text-[#14171A] leading-tight">
+                Spaces shaped around the way you live.
+              </h2>
+              <p className="font-sans text-base text-[#545F68] font-light leading-relaxed">
+                We believe that good architecture is quiet, purposeful, and honest. Rather than following
+                fleeting stylistic trends, our work is grounded in the fundamentals: optimal natural light,
+                intuitive circulation, natural ventilation, and materials that grow richer with age.
+              </p>
+              <p className="font-sans text-base text-[#545F68] font-light leading-relaxed">
+                By uniting architecture, interior design, and turnkey site construction under one roof,
+                we provide clients with a seamless experience from the first hand-drawn sketch to the day
+                the keys are handed over.
+              </p>
+              <div className="pt-4 flex flex-wrap gap-3">
+                <span className="px-3 py-1.5 text-xs font-mono bg-[#F1EFEA] border border-[#DFDBD2] text-[#384D58]">
+                  Architecture
+                </span>
+                <span className="px-3 py-1.5 text-xs font-mono bg-[#F1EFEA] border border-[#DFDBD2] text-[#384D58]">
+                  Interior Design
+                </span>
+                <span className="px-3 py-1.5 text-xs font-mono bg-[#F1EFEA] border border-[#DFDBD2] text-[#384D58]">
+                  Turnkey Construction
+                </span>
+                <span className="px-3 py-1.5 text-xs font-mono bg-[#F1EFEA] border border-[#DFDBD2] text-[#384D58]">
+                  Residential &amp; Commercial
+                </span>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* Founder / Principal Architect Profile (Image 5 Requirement) */}
+      <section className="py-20 md:py-28 border-b border-[#DFDBD2] bg-[#F1EFEA]">
         <Container size="wide">
           <SectionHeader
             number="01"
-            eyebrow="Architectural Foundation"
-            title="The Philosophy of Functional Architecture"
-            subtitle="Architecture should never be an arbitrary sculpture imposed onto an unsuspecting occupant."
+            eyebrow="Leadership &amp; Direction"
+            title="Principal Architect &amp; Founder"
+            subtitle="Guiding each project with personal design attention, rigorous detailing, and on-site oversight."
             align="split"
           />
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 my-12">
-            <div className="lg:col-span-5 p-8 bg-[#F1EFEA] border border-[#DFDBD2] flex flex-col justify-between">
-              <span className="font-mono text-xs tracking-widest text-[#384D58] uppercase block mb-4">
-                Core Conviction
-              </span>
-              <blockquote className="font-serif text-2xl text-[#14171A] leading-snug font-light italic">
-                &ldquo;Form follows function is not a historical cliché—it is the only moral standard in
-                an era of fleeting architectural trends.&rdquo;
-              </blockquote>
-              <div className="pt-6 mt-6 border-t border-[#DFDBD2] text-[11px] font-mono text-[#545F68]">
-                LINEHAUS ARCHITECTS · BHADRAVATI
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 my-12 items-center">
+            {/* Founder Portrait Provision */}
+            <div className="lg:col-span-5">
+              <div className="relative border border-[#DFDBD2] bg-[#F8F7F4] p-3 shadow-sm">
+                <div className="aspect-[4/5] relative overflow-hidden bg-[#E8E6E1] flex flex-col items-center justify-center text-center p-8">
+                  <div className="w-24 h-24 rounded-full border border-[#384D58]/40 flex items-center justify-center mb-4 bg-[#DFDBD2]/60">
+                    <Users className="w-10 h-10 text-[#384D58]" />
+                  </div>
+                  <span className="font-serif text-2xl text-[#14171A] font-normal mb-1">
+                    Principal Architect
+                  </span>
+                  <span className="font-mono text-xs tracking-wider uppercase text-[#384D58] mb-4">
+                    Founder &amp; Lead Designer
+                  </span>
+                  <span className="font-mono text-[10px] text-[#88939C] max-w-xs">
+                    [PORTRAIT PROVISION · LINEHAUS STUDIO LEAD]
+                  </span>
+                </div>
+                <div className="pt-3 pb-1 px-1 flex items-center justify-between text-[11px] font-mono text-[#545F68]">
+                  <span>LINEHAUS ARCHITECTS</span>
+                  <span>BHADRAVATI, KA</span>
+                </div>
               </div>
             </div>
 
-            <div className="lg:col-span-7 space-y-6 text-[#545F68] font-sans font-light text-base sm:text-lg leading-relaxed">
-              <p>
-                Our practice operates across residential, luxury estates, commercial facilities,
-                interiors, and landscape design. While the scale varies, our fundamental methodology
-                remains constant: we strip away arbitrary ornament to expose the innate power of proportion,
-                natural light, and honest materials.
+            {/* Founder Narrative & About Me */}
+            <div className="lg:col-span-7 space-y-6">
+              <div className="space-y-2">
+                <span className="font-mono text-xs tracking-widest text-[#384D58] uppercase block">
+                  About the Founder
+                </span>
+                <h3 className="font-serif text-3xl sm:text-4xl text-[#14171A] font-normal">
+                  A commitment to craft, integrity, and spatial clarity.
+                </h3>
+              </div>
+
+              <p className="font-sans text-base sm:text-lg text-[#545F68] font-light leading-relaxed">
+                Founded in Bhadravati, Linehaus Architects was born from a conviction that regional
+                architecture should never compromise on contemporary design excellence or construction quality.
               </p>
-              <p>
-                We reject the commodification of residential design into generic, cookie-cutter villas.
-                Every client brings unique spatial rituals, family traditions, and aspirations. Our
-                responsibility as architects is to translate those daily patterns into intuitive,
-                dignified spaces that feel effortless to inhabit.
+
+              <p className="font-sans text-base text-[#545F68] font-light leading-relaxed">
+                As founder and principal architect, every commission receives direct hands-on leadership—from
+                initial spatial zoning diagrams and volumetric 3D studies to the selection of granite slabs
+                and weekly job site inspections.
               </p>
-              <p>
-                By integrating architecture, interior craftsmanship, and turnkey construction management
-                under a single studio discipline, we eliminate the dilution that routinely occurs when
-                design is separated from physical execution.
-              </p>
+
+              <blockquote className="font-serif text-xl sm:text-2xl text-[#14171A] leading-snug font-light italic border-l-2 border-[#384D58] pl-6 py-2 my-6">
+                &ldquo;We don&apos;t just draw plans; we build permanent homes where everyday living feels effortless,
+                generous, and grounded in dignity.&rdquo;
+              </blockquote>
+
+              <div className="pt-4 flex flex-wrap items-center gap-6 text-xs font-mono text-[#384D58]">
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-[#384D58]" />
+                  <span>Direct Principal Architect Involvement</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-[#384D58]" />
+                  <span>Single-Source Accountability</span>
+                </div>
+              </div>
             </div>
           </div>
+        </Container>
+      </section>
 
-          {/* Four Core Principles */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16 pt-16 border-t border-[#DFDBD2]">
+      {/* 02: Four Architectural Principles (Image 9) */}
+      <section className="py-20 md:py-28 border-b border-[#DFDBD2]">
+        <Container size="wide">
+          <SectionHeader
+            number="02"
+            eyebrow="Design Pillars"
+            title="Four Architectural Principles"
+            subtitle="The fundamental foundations guiding every home, interior, and structure we create."
+            align="split"
+          />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
             {philosophyData.principles.map((principle) => (
               <div
                 key={principle.number}
-                className="p-8 bg-white border border-[#DFDBD2] space-y-4"
+                className="p-8 bg-white border border-[#DFDBD2] hover:border-[#384D58] transition-colors flex flex-col justify-between"
               >
-                <span className="font-mono text-sm tracking-widest text-[#384D58] font-semibold">
-                  [{principle.number}]
-                </span>
-                <h3 className="font-serif text-2xl text-[#14171A]">{principle.title}</h3>
-                <p className="font-mono text-xs uppercase tracking-wider text-[#384D58]">
-                  {principle.tagline}
-                </p>
-                <p className="font-sans text-sm text-[#545F68] font-light leading-relaxed pt-2">
-                  {principle.description}
-                </p>
+                <div>
+                  <span className="font-mono text-sm tracking-widest text-[#384D58] font-semibold block mb-3">
+                    [{principle.number}]
+                  </span>
+                  <h3 className="font-serif text-2xl text-[#14171A] mb-1">{principle.title}</h3>
+                  <p className="font-mono text-xs uppercase tracking-wider text-[#384D58] mb-4">
+                    {principle.tagline}
+                  </p>
+                  <p className="font-sans text-sm text-[#545F68] font-light leading-relaxed">
+                    {principle.description}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
         </Container>
       </section>
 
-      {/* 02: The Studio Approach & Methodology */}
+      {/* 03: The Studio Approach & Methodology */}
       <section className="py-20 md:py-28 border-b border-[#DFDBD2] bg-[#F1EFEA]">
         <Container size="wide">
           <SectionHeader
-            number="02"
+            number="03"
             eyebrow="Execution Methodology"
             title="The Four-Stage Approach"
             subtitle="How an initial spatial conversation matures into a permanent, built reality."
@@ -232,13 +325,13 @@ export default function StudioPage() {
         </Container>
       </section>
 
-      {/* 03: The Studio Team & Practice Structure */}
+      {/* 04: Studio Team & Practice Structure */}
       <section className="py-20 md:py-28 border-b border-[#DFDBD2]">
         <Container size="wide">
           <SectionHeader
-            number="03"
-            eyebrow="Multidisciplinary Atelier"
-            title="Studio Practice & Team Structure"
+            number="04"
+            eyebrow="Multidisciplinary Practice"
+            title="Studio Practice &amp; Team Structure"
             subtitle="An integrated practice bridging design conception, engineering calculation, and artisanal site execution."
             align="split"
           />
@@ -267,10 +360,10 @@ export default function StudioPage() {
           <div className="p-6 bg-[#F1EFEA] border border-[#DFDBD2] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-[#545F68]">
             <div className="flex items-center gap-2">
               <ShieldCheck className="w-4 h-4 text-[#384D58] flex-shrink-0" />
-              <span>Council of Architecture Norms &amp; Statutory Code Adherence</span>
+              <span>Statutory Code Adherence, Structural Rigour &amp; Building Standards</span>
             </div>
             <span className="text-[#384D58]">
-              Central Karnataka &amp; Malnad Commission Focus
+              Central Karnataka Commission Focus
             </span>
           </div>
         </Container>
@@ -291,7 +384,7 @@ export default function StudioPage() {
               evaluating a commercial project in Karnataka, our studio provides preliminary spatial
               assessments.
             </p>
-            <div className="pt-4">
+            <div className="pt-4 flex flex-wrap items-center justify-center gap-4">
               <Link
                 href="/contact"
                 className="inline-flex items-center gap-2 px-8 py-4 text-xs font-sans font-medium tracking-[0.2em] uppercase bg-[#384D58] text-[#F8F7F4] hover:bg-[#4F6877] transition-colors"
@@ -299,6 +392,15 @@ export default function StudioPage() {
                 <span>Initiate Project Consultation</span>
                 <ArrowUpRight className="w-4 h-4" />
               </Link>
+              <a
+                href="https://wa.me/919480000000?text=Hello%20Linehaus%20Architects,%20I%20would%20like%20to%20discuss%20a%20project."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-8 py-4 text-xs font-sans font-medium tracking-[0.2em] uppercase bg-[#25D366] text-white hover:bg-[#20ba5a] transition-colors"
+              >
+                <span>Chat on WhatsApp</span>
+                <ArrowUpRight className="w-4 h-4" />
+              </a>
             </div>
           </div>
         </Container>

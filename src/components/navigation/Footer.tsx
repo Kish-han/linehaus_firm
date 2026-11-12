@@ -71,38 +71,44 @@ export const Footer: React.FC = () => {
             </span>
             <div className="space-y-2 text-xs font-sans text-[#E8EDF0]">
               <p className="leading-relaxed">
-                <strong className="text-white font-medium">Bhadravati Studio Base:</strong>
+                <strong className="text-white font-medium">Bhadravati Studio:</strong>
                 <br />
                 {siteConfig.location.addressDisplay}
-              </p>
-              <p className="font-mono text-[11px] text-[#A0B2BD]">
-                {siteConfig.location.coordinates.latitude}, {siteConfig.location.coordinates.longitude} (Regional Datum)
               </p>
               <p className="text-[11px] text-[#8C9EA9] italic pt-1">
                 {siteConfig.location.consultationNote}
               </p>
             </div>
 
-            <div className="pt-2">
+            <div className="pt-2 flex flex-col gap-2">
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 text-xs font-mono tracking-widest uppercase text-white hover:text-[#A0B2BD] transition-colors border-b border-[#384D58] pb-1"
+                className="inline-flex items-center gap-2 text-xs font-mono tracking-widest uppercase text-white hover:text-[#A0B2BD] transition-colors border-b border-[#384D58] pb-1 w-fit"
               >
                 <span>Initiate Project Brief</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
+              <a
+                href={siteConfig.contact.whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-xs font-mono tracking-widest uppercase text-[#25D366] hover:text-[#20ba5a] transition-colors"
+              >
+                <span>WhatsApp Studio Enquiry</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </a>
             </div>
           </div>
         </div>
 
-        {/* Lower Legal & Compliance Colophon */}
+        {/* Lower Colophon */}
         <div className="pt-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-[11px] font-mono tracking-wider text-[#8C9EA9]">
           <div>
             <p>
               © 2026 {siteConfig.name}. All Rights Reserved.
             </p>
             <p className="text-[10px] text-[#697985] mt-0.5">
-              {siteConfig.compliance.coaRegistrationNote}
+              Architecture · Interiors · Turnkey Construction
             </p>
           </div>
 

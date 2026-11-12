@@ -1,141 +1,97 @@
 import React from "react";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
-import { SectionHeader } from "@/components/ui/SectionHeader";
+import { ArchitecturalImage } from "@/components/ui/ArchitecturalImage";
 import { siteConfig } from "@/data/siteConfig";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, CheckCircle2 } from "lucide-react";
 
 export const StudioPreviewSection: React.FC = () => {
-  const steps = [
-    {
-      num: "01",
-      title: "Topographical & Site Analysis",
-      desc: "Topography, solar orientation, site access, and soil conditions establish the foundational constraints before any line is drafted.",
-    },
-    {
-      num: "02",
-      title: "Spatial & Functional Massing",
-      desc: "Circulation corridors, daylight infiltration, privacy gradients, and room volumes are sculpted into coherent, efficient floor plans.",
-    },
-    {
-      num: "03",
-      title: "Technical Detailing & BOQ",
-      desc: "Structural engineering, MEP coordination, architectural joinery, and transparent quantities prevent budget creep.",
-    },
-    {
-      num: "04",
-      title: "Turnkey Site Realisation",
-      desc: "Single-source site management, artisan supervision, material procurement, and milestone sign-offs ensure the built reality mirrors the drawings.",
-    },
-  ];
-
   return (
-    <section id="studio" className="py-20 md:py-28 border-b border-[#DFDBD2] bg-[#F8F7F4]">
+    <section id="studio-story" className="py-20 md:py-28 border-b border-[#DFDBD2] bg-[#F8F7F4]">
       <Container size="wide">
-        <SectionHeader
-          number="04"
-          eyebrow="The Studio &amp; Approach"
-          title="Rooted in Context, Guided by Rigour"
-          subtitle={`Operating from ${siteConfig.location.city}, Karnataka, Linehaus bridges modern architectural thought with regional contextual intelligence.`}
-          align="split"
-        />
-
-        {/* Studio Editorial Spread */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 my-12 items-stretch">
-          {/* Practice Narrative Box */}
-          <div className="lg:col-span-6 p-8 sm:p-10 bg-[#F1EFEA] border border-[#DFDBD2] flex flex-col justify-between">
-            <div className="space-y-4">
-              <span className="font-mono text-xs tracking-widest text-[#384D58] uppercase block">
-                Practice Ethos
-              </span>
-              <h3 className="font-serif text-2xl sm:text-3xl font-normal text-[#14171A]">
-                Architecture for the Indian Reality
-              </h3>
-              <p className="font-sans text-sm sm:text-base text-[#545F68] font-light leading-relaxed">
-                Architecture should respond to how people genuinely inhabit spaces. We craft homes
-                and environments designed for longevity, practical circulation, and enduring material dignity.
-              </p>
-              <p className="font-sans text-sm sm:text-base text-[#545F68] font-light leading-relaxed">
-                Our approach honors the spatial wisdom of traditional regional architecture—deep overhangs,
-                shaded internal courtyards, tactile stone, and generous natural daylight—reimagined in sharp,
-                contemporary architectural geometries.
-              </p>
-            </div>
-
-            <div className="pt-8 mt-6 border-t border-[#DFDBD2]">
-              <Link
-                href="/studio"
-                className="inline-flex items-center gap-2 text-xs font-mono tracking-widest uppercase text-[#384D58] hover:text-[#14171A] transition-colors"
-              >
-                <span>Read Full Studio Profile</span>
-                <ArrowUpRight className="w-3.5 h-3.5" />
-              </Link>
-            </div>
-          </div>
-
-          {/* Regional Context & Materiality Details */}
-          <div className="lg:col-span-6 p-8 sm:p-10 bg-[#FFFFFF] border border-[#DFDBD2] flex flex-col justify-between">
-            <div className="space-y-4">
-              <span className="font-mono text-xs tracking-widest text-[#384D58] uppercase block">
-                Material Authenticity
-              </span>
-              <h3 className="font-serif text-2xl sm:text-3xl font-normal text-[#14171A]">
-                The Palette of Permanence
-              </h3>
-              <div className="space-y-3 pt-2 text-xs sm:text-sm text-[#545F68]">
-                <div className="flex items-start gap-3 pb-3 border-b border-[#DFDBD2]/60">
-                  <span className="font-mono text-xs text-[#384D58] font-semibold">[01]</span>
-                  <div>
-                    <strong className="text-[#14171A] font-medium block">Cast Concrete &amp; Monolithic Slabs</strong>
-                    <span className="font-light">Thermal stability, tectonic clarity, and structural longevity.</span>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3 pb-3 border-b border-[#DFDBD2]/60">
-                  <span className="font-mono text-xs text-[#384D58] font-semibold">[02]</span>
-                  <div>
-                    <strong className="text-[#14171A] font-medium block">Sadarahalli &amp; Basalt Granite</strong>
-                    <span className="font-light">Enduring stone plinths quarried locally in Karnataka, aging with dignity.</span>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <span className="font-mono text-xs text-[#384D58] font-semibold">[03]</span>
-                  <div>
-                    <strong className="text-[#14171A] font-medium block">Slate Steel &amp; Sustainable Teak Joinery</strong>
-                    <span className="font-light">Muted architectural steel framing paired with tactile, FSC-certified hardwoods.</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="pt-6 mt-4 border-t border-[#DFDBD2]">
-              <span className="font-mono text-[11px] text-[#88939C] uppercase">
-                Council of Architecture (India) Practice Norms · Bhadravati, Karnataka
-              </span>
-            </div>
-          </div>
+        {/* Section Marker */}
+        <div className="flex items-center gap-3 mb-4">
+          <span className="font-mono text-xs tracking-[0.25em] text-[#384D58] font-medium">
+            [04]
+          </span>
+          <span className="font-mono text-xs tracking-[0.25em] uppercase text-[#384D58]">
+            The Studio Story
+          </span>
         </div>
 
-        {/* 4-Step Methodology Timeline */}
-        <div className="mt-16 pt-12 border-t border-[#DFDBD2]">
-          <span className="font-mono text-xs tracking-[0.25em] text-[#384D58] uppercase block mb-8">
-            Execution Methodology
-          </span>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {steps.map((step) => (
-              <div key={step.num} className="p-6 bg-[#F1EFEA] border border-[#DFDBD2]">
-                <span className="font-mono text-sm text-[#384D58] font-semibold block mb-3">
-                  [{step.num}]
-                </span>
-                <h4 className="font-serif text-lg text-[#14171A] font-normal mb-2">
-                  {step.title}
-                </h4>
-                <p className="font-sans text-xs text-[#545F68] font-light leading-relaxed">
-                  {step.desc}
-                </p>
+        {/* Editorial Studio Story Spread (Image 2 Requirement: Norm Architects style) */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+          {/* Architectural Tactile / Process Photograph */}
+          <div className="lg:col-span-6">
+            <div className="relative border border-[#DFDBD2] bg-[#E8E6E1] overflow-hidden">
+              <ArchitecturalImage
+                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80"
+                alt="Architectural material craft and tactile stone detailing"
+                aspectRatio="16/10"
+                caption="Tactile materiality: honest stone and timber detailing in practice."
+              />
+            </div>
+          </div>
+
+          {/* Short Editorial Story Narrative (Exact copy from Image 2) */}
+          <div className="lg:col-span-6 space-y-6">
+            <div className="space-y-3">
+              <span className="font-mono text-xs tracking-widest text-[#384D58] uppercase block">
+                Practice Profile · Bhadravati, Karnataka
+              </span>
+              <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-normal text-[#14171A] leading-tight">
+                Designing with purpose. <br />
+                <span className="italic text-[#384D58]">Building with precision.</span>
+              </h2>
+            </div>
+
+            <p className="font-sans text-base sm:text-lg text-[#545F68] font-light leading-relaxed">
+              LINEHAUS ARCHITECTS is a multidisciplinary architectural practice based in Bhadravati,
+              Karnataka. We bring together architecture, interiors and construction to create
+              thoughtful spaces that balance functionality, aesthetics and lasting quality.
+            </p>
+
+            <p className="font-sans text-sm sm:text-base text-[#545F68] font-light leading-relaxed">
+              We eliminate the friction between conceptual design and on-site building by providing
+              complete single-point accountability—ensuring every detail drawn is built with millimetric rigour.
+            </p>
+
+            {/* Disciplines Strip */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs font-mono text-[#384D58]">
+              <div className="flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-[#384D58] flex-shrink-0" />
+                <span>Architecture &amp; Spatial Planning</span>
               </div>
-            ))}
+              <div className="flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-[#384D58] flex-shrink-0" />
+                <span>Interior Architecture &amp; Joinery</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-[#384D58] flex-shrink-0" />
+                <span>Turnkey Construction &amp; Build</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-[#384D58] flex-shrink-0" />
+                <span>Residential &amp; Commercial</span>
+              </div>
+            </div>
+
+            <div className="pt-4 border-t border-[#DFDBD2] flex flex-wrap items-center gap-4">
+              <Link
+                href="/studio"
+                className="inline-flex items-center gap-2 px-6 py-3 text-xs font-sans font-medium tracking-[0.2em] uppercase bg-[#384D58] text-[#F8F7F4] hover:bg-[#273740] transition-colors"
+              >
+                <span>Read Full Studio Story</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </Link>
+
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 text-xs font-mono tracking-widest uppercase text-[#545F68] hover:text-[#14171A] transition-colors"
+              >
+                <span>Initiate Consultation →</span>
+              </Link>
+            </div>
           </div>
         </div>
       </Container>

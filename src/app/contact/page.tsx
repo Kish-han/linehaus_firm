@@ -46,9 +46,8 @@ export default function ContactPage() {
             <p className="font-sans text-xs text-[#545F68] leading-relaxed">
               {siteConfig.location.addressDisplay}
             </p>
-            <p className="font-mono text-xs text-[#384D58] pt-2 border-t border-[#DFDBD2]">
-              LAT {siteConfig.location.coordinates.latitude} <br />
-              LON {siteConfig.location.coordinates.longitude}
+            <p className="font-sans text-xs text-[#384D58] pt-2 border-t border-[#DFDBD2]">
+              Central Karnataka Region · Studio meetings &amp; site visits by prior appointment
             </p>
           </div>
 

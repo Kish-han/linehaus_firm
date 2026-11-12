@@ -131,8 +131,18 @@ Submitted via Linehaus Digital Architecture Portal`;
                 {siteConfig.contact.email}
               </p>
               <p className="text-[#8C9EA9]">
-                {siteConfig.location.city}, Karnataka · {siteConfig.location.coordinates.latitude}
+                {siteConfig.location.city}, Karnataka · Central Karnataka
               </p>
+              <div className="pt-2">
+                <a
+                  href={siteConfig.contact.whatsappLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-xs font-mono tracking-wider uppercase text-[#25D366] hover:underline"
+                >
+                  <span>Chat on WhatsApp →</span>
+                </a>
+              </div>
             </div>
           </div>
 

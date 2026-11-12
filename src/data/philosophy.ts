@@ -11,31 +11,31 @@ export const philosophyData = {
   principles: [
     {
       number: "01",
-      title: "Purposeful Spatial Planning",
-      tagline: "Every square metre must justify its existence.",
-      description:
-        "We reject dead zones and bloated circulation corridors. Floor plans are calibrated around how light moves, how family members congregate, and how privacy transitions from public arrival to intimate sanctuary.",
+      title: "Spatial Planning",
+      tagline: "Designed around people and everyday living",
+      description: "Spaces designed around people, movement and everyday living.",
+      image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
     },
     {
       number: "02",
-      title: "Environmental & Site Harmony",
-      tagline: "Architecture designed in harmony with its physical setting.",
-      description:
-        "Thoughtful orientation, natural daylight infiltration, open courtyards, and strategic spatial massing cultivate a timeless, serene atmosphere throughout every living space.",
+      title: "Contextual Design",
+      tagline: "Natural light, orientation & regional understanding",
+      description: "Natural light, orientation and regional understanding.",
+      image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
     },
     {
       number: "03",
-      title: "Material Honesty & Detailing",
-      tagline: "Authentic materials age with grace, not obsolescence.",
-      description:
-        "Exposed cast concrete, hand-dressed granite, regional laterite, precision steel joinery, and sustainably sourced timber are detailed to withstand time, weathering, and rigorous tropical cycles.",
+      title: "Material & Detailing",
+      tagline: "Thoughtful material selection & precise detailing",
+      description: "Thoughtful material selection and precise detailing.",
+      image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80",
     },
     {
       number: "04",
-      title: "Turnkey Cohesion & Rigour",
-      tagline: "From master concept to the final door handle.",
-      description:
-        "The integrity of architecture dissolves when execution is fragmented. We bridge architectural volume, interior craftsmanship, and structural engineering into an unbroken, accountable continuum.",
+      title: "Design to Execution",
+      tagline: "Connecting design intent with quality construction",
+      description: "Connecting design intent with quality construction.",
+      image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80",
     },
   ] as StudioPrinciple[],
   stats: [] as { label: string; value: string; note: string }[],
