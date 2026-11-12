@@ -112,7 +112,7 @@ export const SelectedProjectsSection: React.FC = () => {
                       href={`/projects/${project.slug}`}
                       className="inline-flex items-center gap-2 font-sans text-xs tracking-[0.2em] uppercase font-medium text-[#14171A] group-hover:text-[#384D58] transition-colors border-b border-[#14171A] group-hover:border-[#384D58] pb-1"
                     >
-                      <span>Examine Typology Study &amp; Drawings</span>
+                      <span>Explore Typology Study</span>
                       <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                     </Link>
                   </div>
