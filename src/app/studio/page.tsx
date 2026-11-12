@@ -3,7 +3,7 @@ import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { philosophyData } from "@/data/philosophy";
 import Link from "next/link";
-import { ArrowUpRight, Compass, SunMedium, Wind } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Studio & Philosophy",
@@ -98,36 +98,6 @@ export default function StudioPage() {
                 By integrating architecture, interior craftsmanship, and turnkey construction management
                 under a single studio discipline, we eliminate the dilution that routinely occurs when
                 design is separated from physical execution.
-              </p>
-            </div>
-          </div>
-
-          {/* Environmental Vectors */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-12 border-t border-[#DFDBD2]">
-            <div className="p-6 bg-white border border-[#DFDBD2]">
-              <SunMedium className="w-6 h-6 text-[#384D58] mb-4" />
-              <h4 className="font-serif text-xl text-[#14171A] mb-2">Solar &amp; Thermal Massing</h4>
-              <p className="font-sans text-xs text-[#545F68] leading-relaxed">
-                Strategic orientation deflects intense western sun while welcoming diffused northern
-                illumination into living zones, maintaining cooler indoor temperatures naturally.
-              </p>
-            </div>
-
-            <div className="p-6 bg-white border border-[#DFDBD2]">
-              <Wind className="w-6 h-6 text-[#384D58] mb-4" />
-              <h4 className="font-serif text-xl text-[#14171A] mb-2">Pneumatic Stack Ventilation</h4>
-              <p className="font-sans text-xs text-[#545F68] leading-relaxed">
-                Central courtyards and roof lanterns generate chimney effects that continuously extract
-                hot ambient air, circulating fresh breezes throughout humid monsoon months.
-              </p>
-            </div>
-
-            <div className="p-6 bg-white border border-[#DFDBD2]">
-              <Compass className="w-6 h-6 text-[#384D58] mb-4" />
-              <h4 className="font-serif text-xl text-[#14171A] mb-2">Regional Material Logic</h4>
-              <p className="font-sans text-xs text-[#545F68] leading-relaxed">
-                We prioritize local Karnataka granites, site-quarried laterite, and cast concrete that
-                weather gracefully rather than synthetic claddings that deteriorate under UV exposure.
               </p>
             </div>
           </div>
