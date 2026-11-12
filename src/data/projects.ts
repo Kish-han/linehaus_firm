@@ -17,7 +17,7 @@ export const projectsData: CuratedProject[] = [
     id: "typ-courtyard-house",
     slug: "courtyard-residence-bhadravati",
     title: "The Courtyard House",
-    subtitle: "A climate-responsive private residence centered on an internal monsoon court",
+    subtitle: "A private contemporary residence centered on an internal open-to-sky courtyard",
     typology: "Residential",
     location: "Bhadravati, Karnataka",
     year: "2024",
@@ -25,17 +25,15 @@ export const projectsData: CuratedProject[] = [
     status: "Ongoing",
     leadArchitect: "Linehaus Practice Group",
     summary:
-      "An architectural typology study exploring how a modern family residence can buffer against the humid tropical monsoon cycles of the Bhadravati river basin through an internal double-height courtyard that drives passive air circulation.",
+      "A residential architecture project exploring how a modern family dwelling is organized around an internal double-height courtyard that drives natural daylight and open spatial flow.",
     concept:
-      "The house responds to regional climatic conditions by adopting an introverted perimeter wall paired with a deeply porous core. Living zones flank an open-to-sky central lightwell paved with hand-honed Sadarahalli granite and shaded by deep cantilevered timber brise-soleil.",
+      "The house adopts an introverted perimeter wall paired with a deeply porous core. Living zones flank an open-to-sky central lightwell paved with hand-honed Sadarahalli granite and shaded by deep cantilevered timber brise-soleil.",
     challengesAndSolutions: {
       challenge:
-        "Tropical solar gain on western façades combined with high seasonal rainfall requiring effective natural drainage and passive thermal cooling without continuous HVAC reliance.",
+        "Western solar exposure requiring effective daylight modulation and thermal buffer without continuous mechanical reliance.",
       solution:
-        "Engineered a double-skin cavity perimeter wall, integrated with an internal stack ventilation chimney that extracts warm air through louvered clerestories, keeping indoor ambient temperatures significantly lower than the exterior.",
+        "Engineered a double-skin cavity perimeter wall integrated with high-level clerestory louvers that ventilate upper zones while keeping interior spaces naturally cool.",
     },
-    climaticStrategy:
-      "Solar orientation minimized along east-west exposure; central court acts as an architectural lung driving cross-ventilation across both living levels.",
     materiality: [
       "Board-formed Monolithic Concrete",
       "Sadarahalli Grey Granite Plinths",
@@ -91,7 +89,7 @@ export const projectsData: CuratedProject[] = [
         caption: "Ground floor plan organized around the central open-to-sky courtyard lung.",
       },
       {
-        title: "Longitudinal Climatic Section",
+        title: "Building Section & Spatial Elevation",
         type: "Section",
         caption: "Airflow trajectory illustrating stack effect purge through roof clerestory.",
       },
@@ -111,7 +109,7 @@ export const projectsData: CuratedProject[] = [
     status: "Completed",
     leadArchitect: "Linehaus Practice Group",
     summary:
-      "A spatial study exploring the reinterpretation of the traditional regional verandah ('jagali') into an expansive 32-metre horizontal living threshold that shelters multi-generational family living from intense monsoon showers.",
+      "A spatial study exploring the reinterpretation of the traditional regional verandah ('jagali') into an expansive 32-metre horizontal living threshold that shelters multi-generational family living under deep, protective eaves.",
     concept:
       "Conceived as a cluster of autonomous living pods sheltered beneath a singular hovering folded roof plane. Deep perimeter verandahs buffer the inner rooms from tropical rain while cultivating shaded communal gathering areas.",
     challengesAndSolutions: {
@@ -120,8 +118,6 @@ export const projectsData: CuratedProject[] = [
       solution:
         "Separated formal entertaining pavilions and intimate sleeping pods into detached volumes linked by covered, open-air loggias and quiet reflection pools.",
     },
-    climaticStrategy:
-      "The 4.2m cantilevered eaves shade glazed façades year-round, eliminating direct solar glare and significantly moderating mechanical cooling requirements.",
     materiality: [
       "In-situ Cast Concrete Roof Plane",
       "Hand-Chiseled Basalt Plinths",
@@ -195,8 +191,6 @@ export const projectsData: CuratedProject[] = [
       solution:
         "Engineered angled solar louvers tuned to local solar paths, providing natural daylight autonomy for 80% of operating hours while cutting solar thermal gain.",
     },
-    climaticStrategy:
-      "External louver envelope deflects solar heat prior to striking building glass; central atrium induces night cooling air exchange.",
     materiality: [
       "Exposed Structural Steel Frame",
       "Extruded Terracotta Shading Louvers",
@@ -257,8 +251,6 @@ export const projectsData: CuratedProject[] = [
       solution:
         "Absorbed structural columns into functional architectural pilasters that house acoustic dampening panels and architectural downlighting.",
     },
-    climaticStrategy:
-      "Continuous airflow channels above sliding doors preserve cross-ventilation across private and communal living suites.",
     materiality: [
       "Custom Slate-Blue Matte Millwork",
       "Hand-Applied Lime Plaster (Warm Off-White)",
@@ -315,12 +307,10 @@ export const projectsData: CuratedProject[] = [
       "Rather than terraforming the site into flat benches, the villa steps gently down the slope across three levels, creating living terraces that overlook the natural forest canopy.",
     challengesAndSolutions: {
       challenge:
-        "High slope gradient with intensive seasonal runoff during peak southwest monsoon months.",
+        "High slope gradient with intensive seasonal runoff on steep terrain.",
       solution:
-        "Designed terraced gabion retaining walls integrated with stepped bioswales that filter runoff into subterranean rainwater holding tanks.",
+        "Designed terraced gabion retaining walls integrated with stepped bioswales that filter runoff into subterranean holding tanks.",
     },
-    climaticStrategy:
-      "Earth-sheltered lower volumes provide natural geothermal cooling; upper cantilevered decks capture prevailing valley updrafts.",
     materiality: [
       "Quarried Regional Laterite Blocks",
       "Off-Shutter Exposed Concrete Slabs",
@@ -360,10 +350,10 @@ export const projectsData: CuratedProject[] = [
     order: 5,
   },
   {
-    id: "typ-monsoon-pavilion",
-    slug: "the-monsoon-garden-pavilion",
-    title: "The Monsoon Garden Pavilion",
-    subtitle: "An ecological landscape pavilion with storm runoff retention pools and native flora",
+    id: "typ-garden-pavilion",
+    slug: "the-garden-pavilion",
+    title: "The Garden Pavilion",
+    subtitle: "An ecological landscape pavilion with natural water retention pools and native flora",
     typology: "Landscape",
     location: "Bhadravati, Karnataka",
     year: "2024",
@@ -371,17 +361,15 @@ export const projectsData: CuratedProject[] = [
     status: "Ongoing",
     leadArchitect: "Linehaus Practice Group",
     summary:
-      "A landscape architecture intervention demonstrating how seasonal monsoon precipitation can be harvested to create natural cooling ponds and drought-resistant native habitats.",
+      "A landscape architecture intervention demonstrating how natural precipitation can be harvested to create peaceful reflection ponds and drought-resistant native habitats.",
     concept:
-      "Celebrates water as an architectural medium. Storm runoff fills stepped granite retention courts before percolating through gravel bio-filtration beds into surrounding aquifers.",
+      "Celebrates water as an architectural medium. Stepped granite retention courts guide water through gravel filtration beds into surrounding aquifers.",
     challengesAndSolutions: {
       challenge:
-        "Suburban site prone to severe monsoon waterlogging followed by severe soil dehydration during dry summer months.",
+        "Suburban site prone to seasonal waterlogging followed by dry summer soil dehydration.",
       solution:
         "Engineered a bio-retention rain garden system populated with native Western Ghats grasses and shade trees requiring zero municipal irrigation once established.",
     },
-    climaticStrategy:
-      "Evaporative cooling from retention water courts lowers air temperatures around adjacent residential spaces by up to 3°C.",
     materiality: [
       "Flamed Grey Granite Walkways",
       "Dry-Stack Natural Laterite Walls",
@@ -406,7 +394,7 @@ export const projectsData: CuratedProject[] = [
       src: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=2000&q=80",
       alt: "Architectural study frame: Lush garden courtyard with stone paving and quiet reflection water elements",
       aspectRatio: "16/10",
-      caption: "Reference study: Stepped granite water courts retaining monsoon rainwater.",
+      caption: "Reference study: Stepped granite water courts and reflection pools.",
       isHero: false,
     },
     gallery: [

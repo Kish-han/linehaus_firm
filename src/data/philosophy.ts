@@ -2,10 +2,10 @@ import { StudioPrinciple } from "@/types";
 
 export const philosophyData = {
   headline: "Functional Architecture",
-  subheadline: "Form emerges from spatial clarity, climate response, and honest materiality.",
+  subheadline: "Form emerges from spatial clarity, proportion, and honest materiality.",
   manifesto: [
-    "We believe architecture must be purposeful before it is decorative. True luxury is not superficial ornament or transient styling—it is the quiet dignity of balanced natural light, intuitive circulation, thermal equilibrium, and spaces crafted specifically for the rituals of daily living.",
-    "Rooted in Bhadravati, Karnataka, our work navigates the climatic nuances of the Malnad fringe—tempering tropical monsoon precipitation and radiant equatorial sunlight through deep eaves, shaded courts, porous masonry, and natural cross-ventilation.",
+    "We believe architecture must be purposeful before it is decorative. True luxury is not superficial ornament or transient styling—it is the quiet dignity of balanced natural light, intuitive circulation, composed atmosphere, and spaces crafted specifically for the rituals of daily living.",
+    "Rooted in Bhadravati, Karnataka, our work navigates spatial volume, natural light, shaded courtyards, and honest construction, crafting homes that feel intuitive, grounded, and enduring.",
     "From intimate family dwellings to commanding luxury estates and commercial facilities, every Linehaus commission is an exercise in structural discipline, functional efficiency, and enduring architectural integrity.",
   ],
   principles: [
@@ -18,10 +18,10 @@ export const philosophyData = {
     },
     {
       number: "02",
-      title: "Climatic & Environmental Intelligence",
-      tagline: "Architecture designed to breathe with the Deccan and Western Ghats.",
+      title: "Environmental & Site Harmony",
+      tagline: "Architecture designed in harmony with its physical setting.",
       description:
-        "Solar orientation, wind funnels, stack effect ventilation, and strategic thermal massing minimize mechanical dependency while cultivating year-round indoor serenity.",
+        "Thoughtful orientation, natural daylight infiltration, open courtyards, and strategic spatial massing cultivate a timeless, serene atmosphere throughout every living space.",
     },
     {
       number: "03",

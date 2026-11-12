@@ -22,21 +22,21 @@ export default function ConstructionPage() {
       title: "Regional Granites & Natural Stone",
       category: "Plinths & Masonry",
       description:
-        "Hand-dressed Sadarahalli, Channarayapatna grey, and black granite sourced locally from Karnataka quarries, shaped for lifetime plinths and thermal massing.",
+        "Hand-dressed Sadarahalli, Channarayapatna grey, and black granite sourced locally from Karnataka quarries, shaped for lifetime plinths and enduring structure.",
       specs: ["Water-shedding chamfered drip edges", "Dry-pack mortar bed installation", "Flame-textured non-slip external paving"],
     },
     {
       title: "Precision Steel & Fenestration",
       category: "Architectural Envelope",
       description:
-        "Slimline structural hollow sections, laser-cut plate brackets, and thermally broken custom steel frames designed to withstand intense monsoonal wind loads.",
+        "Slimline structural hollow sections, laser-cut plate brackets, and thermally broken custom steel frames designed to withstand structural wind loads.",
       specs: ["Zinc-rich anti-corrosion primer base", "Polyurethane matte architectural coating", "Heavy-gauge stainless steel hardware"],
     },
     {
       title: "Seasoned Architectural Timber",
       category: "Joinery & Millwork",
       description:
-        "Reclaimed and sustainably harvested teak, kiln-dried to equilibrium moisture content to prevent seasonal warping across coastal and Malnad humidity shifts.",
+        "Reclaimed and sustainably harvested teak, kiln-dried to equilibrium moisture content to prevent seasonal warping across changing humidity shifts.",
       specs: ["Moisture content verified < 12%", "Concealed fastener joinery systems", "Natural breathable plant-oil sealants"],
     },
   ];
@@ -59,7 +59,7 @@ export default function ConstructionPage() {
     {
       step: "03",
       name: "Envelope & Waterproofing",
-      focus: "Monsoon Resilience & Joint Sealing",
+      focus: "Weatherproofing & Joint Sealing",
       description:
         "Dual-layer elastomeric waterproofing membranes on all roofs, terraces, and sunken slabs. Continuous 72-hour pond testing executed prior to any finish tiling.",
     },
@@ -119,7 +119,7 @@ export default function ConstructionPage() {
             <h3 className="font-serif text-2xl text-[#14171A]">Authentic Materials</h3>
             <p className="font-sans text-xs text-[#545F68] leading-relaxed">
               We reject synthetic imitations and fragile veneers. We build with stone, concrete,
-              steel, and solid timber that age with dignity under tropical sun and torrential monsoons.
+              steel, and solid timber that age with dignity, character, and permanence.
             </p>
           </div>
 

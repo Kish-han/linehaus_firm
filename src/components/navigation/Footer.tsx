@@ -16,7 +16,7 @@ export const Footer: React.FC = () => {
             <BrandLogo variant="stacked" theme="light" />
             <p className="font-sans text-sm text-[#A0B2BD] font-light leading-relaxed max-w-sm">
               A multidisciplinary architecture and interior atelier committed to functional clarity, 
-              climatic intelligence, and thoughtful residential and turnkey architectural delivery.
+              spatial proportion, and thoughtful residential and turnkey architectural delivery.
             </p>
             <div className="pt-2">
               <span className="inline-block px-2.5 py-1 text-[10px] font-mono tracking-widest uppercase bg-[#273740] text-[#A0B2BD] border border-[#384D58]">

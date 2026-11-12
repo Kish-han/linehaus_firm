@@ -11,7 +11,7 @@ export const PhilosophySection: React.FC = () => {
           number="01"
           eyebrow="Architectural Philosophy"
           title="Functional Architecture"
-          subtitle="Form is never arbitrary. It is the logical resolution of internal life, climate dynamics, and structural honesty."
+          subtitle="Form is never arbitrary. It is the logical resolution of internal life, spatial proportion, and structural honesty."
           align="split"
         />
 
@@ -20,7 +20,7 @@ export const PhilosophySection: React.FC = () => {
           <div className="lg:col-span-5">
             <blockquote className="font-serif text-2xl sm:text-3xl text-[#14171A] leading-snug font-light italic border-l-2 border-[#384D58] pl-6 py-2">
               &ldquo;We reject decorative excess and superficial trends. Architecture must prove its worth
-              through purposeful living, thermal serenity, and spatial clarity.&rdquo;
+              through purposeful living, natural light, and spatial clarity.&rdquo;
             </blockquote>
           </div>
 

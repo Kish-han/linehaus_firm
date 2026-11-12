@@ -45,7 +45,6 @@ export interface Project {
     challenge: string;
     solution: string;
   };
-  climaticStrategy: string;
   materiality: string[];
   metrics: ProjectMetric[];
   heroImage: ProjectImage;

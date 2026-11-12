@@ -8,18 +8,18 @@ import { ArrowUpRight, Compass, Users, CheckCircle2, ShieldCheck, PenTool, HardH
 export const metadata: Metadata = {
   title: "Studio & Philosophy | Approach & Team",
   description:
-    "Discover Linehaus Architects: A multidisciplinary practice rooted in Bhadravati, Karnataka, championing Functional Architecture, climate response, and honest materiality.",
+    "Discover Linehaus Architects: A multidisciplinary practice rooted in Bhadravati, Karnataka, championing Functional Architecture, spatial clarity, and honest materiality.",
 };
 
 export default function StudioPage() {
   const approachStages = [
     {
       step: "01",
-      title: "Spatial Brief & Environmental Audit",
+      title: "Spatial Brief & Site Analysis",
       description:
-        "We begin with in-depth client dialogue to understand daily routines, family dynamics, and spatial requirements. Concurrently, we perform rigorous solar-path, wind-vector, and soil audits on your site.",
+        "We begin with in-depth client dialogue to understand daily routines, family dynamics, and spatial requirements. Concurrently, we evaluate site orientation, approach paths, and soil conditions on your land.",
       icon: FileText,
-      deliverable: "Spatial Program & Climatic Orientation Matrix",
+      deliverable: "Spatial Program & Site Orientation Matrix",
     },
     {
       step: "02",
@@ -50,7 +50,7 @@ export default function StudioPage() {
   const teamDisciplines = [
     {
       role: "Architectural Practice Group",
-      focus: "Spatial Planning, Climate Response & Master Design",
+      focus: "Spatial Planning, Structural Integrity & Master Design",
       description:
         "Led by certified architects operating under Council of Architecture norms, orchestrating spatial proportion, structural grids, and statutory code compliance.",
     },
@@ -87,14 +87,14 @@ export default function StudioPage() {
 
           <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-normal text-[#14171A] leading-[1.08] max-w-5xl">
             We build for daily life, <br />
-            <span className="italic text-[#384D58]">climate reality, and permanence.</span>
+            <span className="italic text-[#384D58]">proportion, and permanence.</span>
           </h1>
 
           <p className="mt-8 font-sans text-base sm:text-xl text-[#545F68] font-light max-w-3xl leading-relaxed">
             Linehaus Architects is a multidisciplinary architecture and interior atelier based in
             Bhadravati, Karnataka. We believe that architectural value is created when spaces are
             conceived with purpose, detailed with structural honesty, and built to withstand the
-            rigours of time and tropical weather.
+            rigours of time and everyday living.
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-12 mt-12 border-t border-[#DFDBD2] text-xs font-mono">
@@ -136,7 +136,7 @@ export default function StudioPage() {
               </span>
               <blockquote className="font-serif text-2xl text-[#14171A] leading-snug font-light italic">
                 &ldquo;Form follows function is not a historical cliché—it is the only moral standard in
-                an era of resource scarcity and climate turbulence.&rdquo;
+                an era of fleeting architectural trends.&rdquo;
               </blockquote>
               <div className="pt-6 mt-6 border-t border-[#DFDBD2] text-[11px] font-mono text-[#545F68]">
                 LINEHAUS ARCHITECTS · BHADRAVATI

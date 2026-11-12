@@ -49,7 +49,7 @@ export const HeroSection: React.FC = () => {
           <div className="lg:col-span-4 lg:pl-6 pb-2">
             <p className="font-sans text-sm sm:text-base text-[#545F68] font-light leading-relaxed mb-4">
               A multidisciplinary practice dedicated to Functional Architecture—sculpting private
-              residences, luxury estates, and environments shaped by climate, structural honesty, and
+              residences, luxury estates, and environments shaped by spatial purpose, structural honesty, and
               practical living.
             </p>
             <div className="flex flex-wrap items-center gap-2 sm:gap-4 text-[10px] sm:text-xs font-mono tracking-wider sm:tracking-widest text-[#384D58] uppercase">
@@ -71,7 +71,7 @@ export const HeroSection: React.FC = () => {
                 src={featuredProject.heroImage.src}
                 alt={featuredProject.heroImage.alt}
                 aspectRatio="16/10"
-                caption="Typology Study: Climate-Responsive Courtyard Living (Karnataka River Basin)"
+                caption="Residential Architecture: The Courtyard House (Bhadravati, Karnataka)"
                 isHero={true}
                 priority={true}
                 overlayText="TYPOLOGY STUDY · THE COURTYARD HOUSE"
@@ -114,8 +114,8 @@ export const HeroSection: React.FC = () => {
                   <span className="font-mono font-medium text-[#14171A]">{featuredProject.area}</span>
                 </div>
                 <div>
-                  <span className="font-mono text-[10px] text-[#88939C] uppercase block">Climatic System</span>
-                  <span className="font-sans text-[11px] text-[#14171A]">Stack Ventilation Lung</span>
+                  <span className="font-mono text-[10px] text-[#88939C] uppercase block">Structural System</span>
+                  <span className="font-sans text-[11px] text-[#14171A]">Monolithic Framework</span>
                 </div>
                 <div>
                   <span className="font-mono text-[10px] text-[#88939C] uppercase block">Execution Mode</span>

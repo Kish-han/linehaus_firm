@@ -55,7 +55,7 @@ export const siteConfig = {
       "Architects in Bhadravati",
       "Karnataka Architecture Studio",
       "Functional Architecture India",
-      "Climate Responsive Architecture Karnataka",
+      "Contemporary Architecture Studio Karnataka",
       "Turnkey Architecture Studio",
       "Modern House Design Shimoga Bhadravati",
       "Residential Interior Architecture",

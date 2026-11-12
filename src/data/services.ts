@@ -7,11 +7,11 @@ export const servicesData: ServiceItem[] = [
     title: "Residential & Luxury Living",
     category: "Architecture",
     shortDescription:
-      "Bespoke private homes, multi-generational family residences, and luxury villa estates designed with uncompromising spatial discipline and climatic sensitivity.",
+      "Bespoke private homes, multi-generational family residences, and luxury villa estates designed with uncompromising spatial discipline and structural integrity.",
     detailedScope: [
-      "Site topography, solar vector, and wind velocity analysis",
+      "Site topography, orientation, and spatial access analysis",
       "Conceptual spatial planning and 3D architectural massing",
-      "Climatic passive ventilation and courtyard integration",
+      "Natural ventilation and courtyard spatial integration",
       "Structural schematic development and municipal sanction liaison",
       "Detailed architectural construction documentation and working drawings",
     ],
@@ -94,7 +94,7 @@ export const servicesData: ServiceItem[] = [
     title: "Landscape Architecture & Design",
     category: "Landscape",
     shortDescription:
-      "Contextual outdoor environments, monsoon-adapted drainage gardens, internal courtyards, and native flora ecosystems that merge indoor sanctuary with open nature.",
+      "Contextual outdoor environments, landscaped drainage courts, internal garden lightwells, and native flora ecosystems that merge indoor sanctuary with open nature.",
     detailedScope: [
       "Native biodiversity and Western Ghats endemic species selection",
       "Rainwater harvesting, swale design, and percolation recharge pits",

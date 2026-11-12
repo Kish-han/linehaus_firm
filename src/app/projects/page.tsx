@@ -49,7 +49,7 @@ export default function ProjectsPage() {
 
           <p className="mt-6 font-sans text-base sm:text-lg text-[#545F68] font-light max-w-3xl leading-relaxed">
             A portfolio of completed residences, luxury estates, commercial workspaces, and ongoing commissions
-            developed through rigorous spatial logic, climatic intelligence, and honest materiality.
+            developed through rigorous spatial logic, proportion, and honest materiality.
           </p>
 
           {/* Typology & Status Filter Bar */}

@@ -9,8 +9,8 @@ export const StudioPreviewSection: React.FC = () => {
   const steps = [
     {
       num: "01",
-      title: "Climatic & Site Analysis",
-      desc: "Topography, solar azimuth, monsoon vectors, and soil chemistry establish the foundational constraints before any line is drafted.",
+      title: "Topographical & Site Analysis",
+      desc: "Topography, solar orientation, site access, and soil conditions establish the foundational constraints before any line is drafted.",
     },
     {
       num: "02",
@@ -36,7 +36,7 @@ export const StudioPreviewSection: React.FC = () => {
           number="04"
           eyebrow="The Studio &amp; Approach"
           title="Rooted in Context, Guided by Rigour"
-          subtitle={`Operating from ${siteConfig.location.city}, Karnataka, Linehaus bridges modern architectural thought with regional environmental intelligence.`}
+          subtitle={`Operating from ${siteConfig.location.city}, Karnataka, Linehaus bridges modern architectural thought with regional contextual intelligence.`}
           align="split"
         />
 
@@ -52,13 +52,13 @@ export const StudioPreviewSection: React.FC = () => {
                 Architecture for the Indian Reality
               </h3>
               <p className="font-sans text-sm sm:text-base text-[#545F68] font-light leading-relaxed">
-                Western architectural models often fail when transported uncritically to the Indian climate. 
-                Large unprotected glass boxes lead to unbearable indoor greenhouse heat and exorbitant electricity bills.
+                Architecture should respond to how people genuinely inhabit spaces. We craft homes
+                and environments designed for longevity, practical circulation, and enduring material dignity.
               </p>
               <p className="font-sans text-sm sm:text-base text-[#545F68] font-light leading-relaxed">
-                Our approach honors the climatic wisdom of traditional Deccan and Malnad vernacular—deep overhangs,
-                ventilation lanterns, shaded internal courtyards, and thermal massing—reimagined in sharp, contemporary
-                architectural geometries.
+                Our approach honors the spatial wisdom of traditional regional architecture—deep overhangs,
+                shaded internal courtyards, tactile stone, and generous natural daylight—reimagined in sharp,
+                contemporary architectural geometries.
               </p>
             </div>
 
