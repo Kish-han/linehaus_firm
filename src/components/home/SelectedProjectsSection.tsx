@@ -19,11 +19,11 @@ export const SelectedProjectsSection: React.FC = () => {
                 [02]
               </span>
               <span className="font-mono text-xs tracking-[0.25em] uppercase text-[#384D58]">
-                Spatial Typology Studies
+                Featured Works
               </span>
             </div>
             <h2 className="font-serif text-3xl sm:text-5xl font-normal text-[#14171A] tracking-tight">
-              Selected Investigations
+              Selected Architecture
             </h2>
           </div>
 
@@ -32,7 +32,7 @@ export const SelectedProjectsSection: React.FC = () => {
               href="/projects"
               className="inline-flex items-center gap-2 font-sans text-xs tracking-[0.2em] uppercase font-medium text-[#384D58] hover:text-[#14171A] transition-colors border-b border-[#384D58] pb-1"
             >
-              <span>Explore All Typologies ({projectsData.length})</span>
+              <span>View All Projects ({projectsData.length})</span>
               <ArrowUpRight className="w-4 h-4" />
             </Link>
           </div>
@@ -77,7 +77,7 @@ export const SelectedProjectsSection: React.FC = () => {
                       <span>·</span>
                       <span>{project.typology}</span>
                       <span>·</span>
-                      <span>TYPOLOGY STUDY</span>
+                      <span className="text-[#384D58] font-medium">{project.status === "Completed" ? "COMPLETED" : "ONGOING"}</span>
                     </div>
 
                     <h3 className="font-serif text-2xl sm:text-3xl md:text-4xl font-normal text-[#14171A] group-hover:text-[#384D58] transition-colors">
@@ -87,7 +87,7 @@ export const SelectedProjectsSection: React.FC = () => {
                     </h3>
 
                     <p className="font-mono text-xs text-[#384D58] tracking-wider uppercase">
-                      {project.location}
+                      {project.location} · {project.year}
                     </p>
                   </div>
 
@@ -98,7 +98,7 @@ export const SelectedProjectsSection: React.FC = () => {
                   {/* Architectural Specs List */}
                   <div className="grid grid-cols-2 gap-4 py-4 border-y border-[#DFDBD2] text-xs">
                     <div>
-                      <span className="font-mono text-[10px] text-[#88939C] uppercase block">Target Area</span>
+                      <span className="font-mono text-[10px] text-[#88939C] uppercase block">Spatial Area</span>
                       <span className="font-mono text-xs text-[#14171A]">{project.area}</span>
                     </div>
                     <div>
@@ -112,7 +112,7 @@ export const SelectedProjectsSection: React.FC = () => {
                       href={`/projects/${project.slug}`}
                       className="inline-flex items-center gap-2 font-sans text-xs tracking-[0.2em] uppercase font-medium text-[#14171A] group-hover:text-[#384D58] transition-colors border-b border-[#14171A] group-hover:border-[#384D58] pb-1"
                     >
-                      <span>Explore Typology Study</span>
+                      <span>View Project</span>
                       <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                     </Link>
                   </div>
@@ -128,7 +128,7 @@ export const SelectedProjectsSection: React.FC = () => {
             href="/projects"
             className="inline-flex items-center gap-3 px-8 py-4 text-xs font-sans font-medium tracking-[0.2em] uppercase bg-[#14171A] text-[#F8F7F4] hover:bg-[#384D58] transition-colors"
           >
-            <span>View All Architectural Typologies</span>
+            <span>View All Works &amp; Projects</span>
             <ArrowUpRight className="w-4 h-4" />
           </Link>
         </div>

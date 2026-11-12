@@ -42,8 +42,8 @@ export const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/services#turnkey" className="hover:text-white transition-colors">
-                  Turnkey Architectural Execution
+                <Link href="/construction" className="hover:text-white transition-colors">
+                  Construction &amp; Execution
                 </Link>
               </li>
               <li>

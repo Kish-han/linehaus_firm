@@ -40,10 +40,10 @@ export const siteConfig = {
       "All conceptual drawings, architectural studies, and representations published on this digital presence are the intellectual property of Linehaus Architects.",
   },
   navLinks: [
-    { label: "About", href: "/#practice" },
-    { label: "Portfolio Studies", href: "/projects" },
-    { label: "Disciplines", href: "/services" },
     { label: "Studio", href: "/studio" },
+    { label: "Projects", href: "/projects" },
+    { label: "Services", href: "/services" },
+    { label: "Construction", href: "/construction" },
     { label: "Contact", href: "/contact" },
   ],
   meta: {

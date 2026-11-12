@@ -6,7 +6,7 @@ export type ProjectTypology =
   | 'Turnkey Architecture'
   | 'Landscape';
 
-export type ProjectStatus = 'Completed' | 'Under Construction' | 'In Concept' | 'Design Development';
+export type ProjectStatus = 'Completed' | 'Ongoing' | 'Under Construction' | 'In Concept' | 'Design Development';
 
 export interface ProjectMetric {
   label: string;
