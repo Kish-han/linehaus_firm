@@ -91,7 +91,7 @@ export const servicesData: ServiceItem[] = [
   {
     id: "landscape-architecture",
     slug: "landscape-architecture",
-    title: "Landscape & Microclimate Design",
+    title: "Landscape Architecture & Design",
     category: "Landscape",
     shortDescription:
       "Contextual outdoor environments, monsoon-adapted drainage gardens, internal courtyards, and native flora ecosystems that merge indoor sanctuary with open nature.",

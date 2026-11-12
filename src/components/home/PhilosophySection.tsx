@@ -58,21 +58,23 @@ export const PhilosophySection: React.FC = () => {
         </div>
 
         {/* Practice Indicators Bar */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-12 pt-8 border-t border-[#DFDBD2]">
-          {philosophyData.stats.map((stat, i) => (
-            <div key={i} className="flex flex-col">
-              <span className="font-mono text-2xl sm:text-3xl font-normal text-[#14171A]">
-                {stat.value}
-              </span>
-              <span className="font-sans text-xs font-medium text-[#384D58] uppercase tracking-wider mt-1">
-                {stat.label}
-              </span>
-              <span className="font-mono text-[10px] text-[#88939C] mt-0.5">
-                {stat.note}
-              </span>
-            </div>
-          ))}
-        </div>
+        {philosophyData.stats.length > 0 && (
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-12 pt-8 border-t border-[#DFDBD2]">
+            {philosophyData.stats.map((stat, i) => (
+              <div key={i} className="flex flex-col">
+                <span className="font-mono text-2xl sm:text-3xl font-normal text-[#14171A]">
+                  {stat.value}
+                </span>
+                <span className="font-sans text-xs font-medium text-[#384D58] uppercase tracking-wider mt-1">
+                  {stat.label}
+                </span>
+                <span className="font-mono text-[10px] text-[#88939C] mt-0.5">
+                  {stat.note}
+                </span>
+              </div>
+            ))}
+          </div>
+        )}
       </Container>
     </section>
   );

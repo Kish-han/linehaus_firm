@@ -58,7 +58,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <Link href="/services#landscape" className="hover:text-white transition-colors">
-                  Landscape &amp; Microclimate
+                  Landscape
                 </Link>
               </li>
             </ul>

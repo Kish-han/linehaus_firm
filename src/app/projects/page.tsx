@@ -13,10 +13,10 @@ export default function ProjectsPage() {
   const filterTabs = [
     "All",
     "Residential",
-    "Luxury Residential",
+    // "Luxury Residential",
     "Commercial",
     "Interior Architecture",
-    "Landscape",
+    // "Landscape",
   ];
 
   const filteredProjects =
@@ -46,12 +46,12 @@ export default function ProjectsPage() {
           </p>
 
           {/* Transparent Provisional Notice */}
-          <div className="mt-8 p-4 bg-[#F1EFEA] border border-[#DFDBD2] text-xs font-mono text-[#545F68] flex items-center gap-3">
+          {/* <div className="mt-8 p-4 bg-[#F1EFEA] border border-[#DFDBD2] text-xs font-mono text-[#545F68] flex items-center gap-3">
             <span className="w-2 h-2 bg-[#384D58] flex-shrink-0" />
             <span>
               NOTE: Curated reference imagery illustrates intended spatial volumes, daylighting, and material detailing. Official client commission documentation is updated on a rolling basis.
             </span>
-          </div>
+          </div> */}
 
           {/* Typology Filter Bar */}
           <div className="flex flex-wrap items-center gap-2 mt-8 pt-8 border-t border-[#DFDBD2]">

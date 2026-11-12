@@ -27,7 +27,7 @@ export const projectsData: CuratedProject[] = [
     summary:
       "An architectural typology study exploring how a modern family residence can buffer against the humid tropical monsoon cycles of the Bhadravati river basin through an internal double-height courtyard that drives passive air circulation.",
     concept:
-      "The house responds to the regional microclimate by adopting an introverted perimeter wall paired with a deeply porous core. Living zones flank an open-to-sky central lightwell paved with hand-honed Sadarahalli granite and shaded by deep cantilevered timber brise-soleil.",
+      "The house responds to regional climatic conditions by adopting an introverted perimeter wall paired with a deeply porous core. Living zones flank an open-to-sky central lightwell paved with hand-honed Sadarahalli granite and shaded by deep cantilevered timber brise-soleil.",
     challengesAndSolutions: {
       challenge:
         "Tropical solar gain on western façades combined with high seasonal rainfall requiring effective natural drainage and passive thermal cooling without continuous HVAC reliance.",
@@ -371,7 +371,7 @@ export const projectsData: CuratedProject[] = [
     status: "In Concept",
     leadArchitect: "Linehaus Practice Group",
     summary:
-      "A landscape architecture intervention demonstrating how seasonal monsoon precipitation can be harvested to create microclimatic cooling ponds and drought-resistant native habitats.",
+      "A landscape architecture intervention demonstrating how seasonal monsoon precipitation can be harvested to create natural cooling ponds and drought-resistant native habitats.",
     concept:
       "Celebrates water as an architectural medium. Storm runoff fills stepped granite retention courts before percolating through gravel bio-filtration beds into surrounding aquifers.",
     challengesAndSolutions: {

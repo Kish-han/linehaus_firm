@@ -38,10 +38,5 @@ export const philosophyData = {
         "The integrity of architecture dissolves when execution is fragmented. We bridge architectural volume, interior craftsmanship, and structural engineering into an unbroken, accountable continuum.",
     },
   ] as StudioPrinciple[],
-  stats: [
-    { label: "Design Disciplines", value: "05", note: "Integrated under one studio" },
-    { label: "Core Focus", value: "Residential", note: "Individual & Luxury commissions" },
-    { label: "Geographic Studio", value: "Bhadravati", note: "Central Karnataka & Western Ghats" },
-    { label: "Execution Standard", value: "Turnkey", note: "Complete design-to-build control" },
-  ],
+  stats: [] as { label: string; value: string; note: string }[],
 };
