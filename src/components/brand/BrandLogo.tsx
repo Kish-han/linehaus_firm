@@ -161,7 +161,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
               className="font-sans text-[10px] tracking-[0.26em] uppercase font-medium"
               style={{ color: colors.descriptorText }}
             >
-              Architecture + Interior Studio
+              Architecture + Interior
             </span>
           </div>
         </div>
